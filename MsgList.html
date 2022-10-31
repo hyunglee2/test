@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>디지털윤리교구</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="bg_phone">
+        <div id="wrap">
+            <div class="view">
+                <div class="container">
+                    <header class="hd_msglist">
+                        <div class="hd_left" id="backBtn">
+                            <img src="img/icon/arrow-left-short.svg" class="icon_img white70">
+                        </div>
+                        <div class="hd_center">
+                            <h1 class="title_h1">
+                                <div id="user-name-field"></div>
+                            </h1>
+                        </div>
+                        <div class="hd_right">
+                            <img src="img/icon/three-dots-vertical.svg" class="icon_img white">
+                        </div>
+                    </header>
+                    <main id="main" class="chatlist msg" role="main">
+                        <div class="chat-list">
+                            <!--문자-->
+                            <div class="chat-list_item msg1" onclick="location.href='MsgScene_1.html'">
+                                <div class="chat-profile">
+
+                                    <div class="virtual">
+                                        <!--프로필 사진 추가-->
+                                        <img src="img/icon/person-circle.svg" class="icon_img head99">
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <h2 class="name">02-1234-4567</h2>
+                                    <div class="msg">
+                                        <p>[Web발신] (광고)"소상공인 대상 특별금융지원 신청 안내"</p>
+                                        <div class="nav-counter" id="msg1-badge">N</div>
+                                        <!--뱃지-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-list_item msg2" onclick="location.href='MsgScene_2.html'">
+                                <div class="chat-profile">
+                                    <div class="virtual">
+                                        <!--프로필 사진 추가-->
+                                        <img src="img/icon/person-circle.svg" class="icon_img head99">
+
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <h2 class="name">1005-7299</h2>
+                                    <div class="msg">
+                                        <p>[Web발신] [만나치킨 45% 할인 쿠폰 도착]</p>
+                                        <div class="nav-counter" id="msg2-badge">N</div>
+                                        <!--뱃지-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-list_item msg3" onclick="location.href='MsgScene_3.html'">
+                                <div class="chat-profile">
+                                    <div class="virtual">
+                                        <!--프로필 사진 추가-->
+                                        <img src="img/icon/person-circle.svg" class="icon_img head99">
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <h2 class="name">00698765431631</h2>
+                                    <div class="msg">
+                                        <p>[국제발신] ※ 최 후보 비리 폭로 ※</p>
+                                        <div class="nav-counter" id="msg3-badge">N</div>
+                                        <!--뱃지-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/MsgList.js"> </script>
+
+</body>
+
+</html>

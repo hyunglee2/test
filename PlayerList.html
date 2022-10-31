@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>디지털윤리교구</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <div id="wrap">
+            <div class="view">
+                <div class="container">
+                    <header class="hd_playerlist">
+                        <div class="hd_center">
+                            <h1 class="title_h1">
+                                <!-- <div id="user-name-field"></div> -->
+                                플레이어 기록
+                            </h1>
+                        </div>
+                    </header>
+                    <main id="main" class="playerlist" role="main">
+                        <div class="btn_wrap">
+                            <div class="blank"></div>
+                            <button class="btn btn-new" type="button" raised="true" id="">
+                                <h2>새로 시작하기</h2>
+                            </button>
+                            <button class="btn btn-reset" id="btn" type="submit" onclick="data_reset()">
+                                <img class="icon_img bar" src="img/icon/arrow-repeat.svg">
+                            </button>
+                        </div>
+                        <div class="player-list">
+
+                            <div id="here"></div>
+                        </div>
+                    </main>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/PlayerList.js"> </script>
+
+</body>
+
+</html>

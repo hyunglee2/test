@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>디지털윤리교구</title>
+  <link href="./css/reset.css" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <link href="./css/layout.css" rel="stylesheet" />
+  <link href="./css/animate.css" rel="stylesheet" />
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head>
+
+<body>
+  <div class="bg_phone">
+    <div id="wrap">
+      <div class="view">
+        <div class="container">
+          <div class="GvFakeSite_bg">
+            <img src="img/icon/house.svg" class="icon_img linkbar">
+
+            <div class="linkbar GvFakeSite_link">
+              <div class="fake-hd_wrap">
+                <img src="img/icon/lock-fill.svg" class="icon_img lock">
+                http://acme.st/3pDsBMhe
+              </div>
+            </div>
+            <img src="img/icon/three-dots-vertical.svg" class="icon_img linkbar">
+
+          </div>
+          <header class="hd_from_GvFakeSite" id="hd_from_GvFakeSite">
+            <div class="hd_center" id="hd_GvFakeSite">
+              <h3 class="GvFakeSite_h3">정부
+                <div class="GV_logo">
+                  <img src="./img/GV_logo.png" alt="말풍선 이미지">
+                </div>
+                지원
+              </h3>
+              <h2 class="GvFakeSite_h2">특별금융지원 신청 시스템</h2>
+            </div>
+          </header>
+
+          <main id="GvFakeSite_main" class="video video_main gv-fake2" role="main">
+            <div class="video-main">
+              <div class="video_item item1 playing-video">
+                <div class="support-list">
+                  <!--아이콘 그룹-->
+
+                  <h1>금융 지원 항목 </h1>
+                  <div class="input_form input_form1">
+                    <div>■ (1년) 무이자 대출</div>
+                    <div>■ 소상공인 경영 회복 특별 금융 지원</div>
+                    <div>■ 서민형 안심 전환(생계 자금)</div>
+                  </div>
+                  <h1 class="here"> 개인정보 입력 </h1>
+                  <div class="guide_wrap" , id="">
+
+                    <!-- 커서 가이드 -->
+                    <div class="cursor_wrap" onclick='factcheck_intro()'>
+                      <span class="cursor" x-placement="bottom">
+                        <button class="react-joyride__beacon" type="button">
+                          <span class="cursor_outer"></span>
+                          <span class="cursor_inner"><span>
+                        </button>
+                      </span>
+                    </div>
+                    <!-- 커서 가이드 -->
+                    <div class="div_wrap">
+                      <!-- 말풍선 -->
+
+                      <!-- 말풍선 -->
+                    </div>
+                    <div class="input_form input_form2 animate__animated" onclick='factcheck_intro()'>
+
+                      <div class="fake-input_wrap">
+                        <div class="title">이름</div>
+                        <div class="fake-input">홍길동</div>
+                      </div>
+                      <div class="fake-input_wrap">
+                        <div class="title">주민등록번호</div>
+                        <div class="fake-input">123456-1234567</div>
+                      </div>
+                      <div class="fake-input_wrap">
+                        <div class="title">계좌번호</div>
+                        <div class="fake-input"></div>
+                      </div>
+                      <div class="fake-input_wrap">
+                        <div class="title">계좌 비밀번호</div>
+                        <div class="fake-input"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+          </main>
+        </div>
+
+        <div class="modal_wrap">
+
+          <!--  모달창 입니다 : 팩트체크 인트로 -->
+          <div class="animate__animated popup" id="factcheck_modal">
+            <div class="title">⚠️잠깐!</div>
+            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+            <div class="content">
+              <div class="FC animate__animated" id="FC1">팩</div>
+              <div class="FC animate__animated" id="FC2">트</div>
+              <div class="FC animate__animated" id="FC3">체</div>
+              <div class="FC animate__animated" id="FC4">크</div>
+            </div>
+            <div class="cmd">
+              <button class="btn btn-next" type="button" raised="true" id="nextBtn1" onclick="entry()">다음</button>
+            </div>
+          </div>
+          <!-- 여기까지 모달창 -->
+          <!--  모달창 입니다 : 팩트체크 인트로 -->
+          <div class="animate__animated popup" id="modal1">
+            <div class="title">⚠️잠깐!</div>
+            <div class="content">
+              <p class="fc_msg text1">
+                해당 사이트는 실제 홈페이지와 유사하게
+                제작된 피싱 사이트입니다.
+              </p>
+            </div>
+            <div class="cmd">
+              <button class="btn btn-next" type="button" raised="true" id="nextBtn1" onclick="next()">다음</button>
+            </div>
+          </div>
+          <!-- 여기까지 모달창 -->
+          <!--  모달창 입니다 : 팩트체크 인트로 -->
+          <div class="animate__animated popup" id="modal2">
+            <div class="title">⚠️잠깐!</div>
+            <div class="content">
+              <p class="fc_msg text2">
+                클릭을 유도하는 메시지에 첨부된 링크를 주의하고, 계좌 번호와 비밀번호 등 너무 많은 정보를 요구할 때는 의심스러운 부분이 없는지 다시 한번 확인해 보세요.
+              </p>
+            </div>
+            <div class="cmd">
+              <button class="btn btn-next" type="button" raised="true" id="nextBtn1" onclick="ok()">확인</button>
+            </div>
+          </div>
+          <!-- 여기까지 모달창 -->
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="./js/GvFakeSite_2.js"> </script>
+</body>
+
+</html>

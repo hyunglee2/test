@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>디지털윤리교구</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/animate.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <div id="wrap">
+            <div class="view">
+                <div class="container">
+                    <!-- 말풍선 -->
+                    <!-- <div class="cont-guide animate__animated">
+                        <div class="guide-text">클릭해보세요</div>
+                        <div class="guide-box">
+                            <img src="./img/cont_guide.png" alt="말풍선 이미지">
+                        </div>
+                    </div> -->
+                    <!-- 말풍선 -->
+
+                    <header class="hd_newslist">
+                        <div class="hd_left" id="backBtn">
+                            <img src="img/icon/arrow-left-short.svg" class="icon_img white99">
+                        </div>
+                        <div class="hd_center">
+                            <h1 class="title_h1">팩트 뉴스</h1>
+                        </div>
+                        <div class="hd_right">
+                            <img src="img/icon/three-dots.svg" class="icon_img white70">
+                        </div>
+                    </header>
+                    <main id="main" class="news news_main news1" role="main">
+                        <div class="news_item item1 news-scene">
+
+                            <div class="info_wrap">
+                                <div class="news-info">
+                                    <div class="news-cont">
+                                        <div class="info">
+                                            <div class="cursor_pos_n animate__animated" onclick="factcheck_intro_n()">
+                                                <div class="category">통계뉴스</div>
+                                            </div>
+                                        </div>
+                                        <h2 class="title">[정치]선거 전 마지막 여론조사, 5월의 대역전극</h2>
+                                    </div>
+                                </div>
+                                <div class="writer-info">
+                                    <div class="info date_info animate__animated" onclick="factcheck_intro_1()">
+                                        <div class="date cursor_pos_1">2022.05.11</div>
+                                        <div class="views ">11:16</div>
+
+                                    </div>
+                                    <div class="guide_wrap " id="guide_wrap_1" onclick="factcheck_intro_1()">
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_1">
+                                            <span class="cursor" x-placement="bottom">
+                                                <button class="react-joyride__beacon" type="button">
+                                                    <span class="cursor_outer"></span>
+                                                    <span class="cursor_inner"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
+
+                                    <div class="writer-profile animate__animated " onclick="factcheck_intro_2()">
+                                        <div class="virtual">
+                                            <!--프로필 사진 추가-->
+                                            <img src="img/ava/talk/Image-60-1.png" class="icon_img profile">
+                                        </div>
+                                        <div class="name news-writer news-writer-pos cursor_pos_2">유경제 기자</div>
+                                        <div class="guide_wrap " id="guide_wrap_2" onclick="factcheck_intro_2()">
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_2">
+                                                <span class="cursor" x-placement="bottom">
+                                                    <button class="react-joyride__beacon" type="button">
+                                                        <span class="cursor_outer"></span>
+                                                        <span class="cursor_inner"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-main ">
+                                <div class="news-cont">
+                                    <p>
+                                        총장 선거 여론 조사 결과<br>
+                                        -여론 조사 전문 기관<br>'유리서치'-<br><br>
+                                        조사 월별 결과<br>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            1월: 이 후보 20%, 김 후보 20%<br>
+                                            2월: 이 후보 25%, 김 후보 25%<br>
+                                            3월: 이 후보 30%, 김 후보 30%<br>
+                                            4월: 이 후보 35%, 김 후보 40%<br>
+                                            5월: 이 후보 44%, 김 후보 49%<br>
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    <div class="cursor_pos_3 animate__animated" onclick="factcheck_intro_3()">
+                                        <p>총장 후보 지지도 5월<br></p>
+                                        선두 두 후보 모두 4월 대비<br>
+                                        9% 포인트 상승
+                                        <br>
+                                        선거 전 마지막 여론조사 최종
+                                        <br>
+                                        <p>
+                                            이 후보 49%, 김 후보 44%
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <p>총장 후보 지지 추이</p>
+                                    <div class="cursor_pos_4 animate__animated" onclick="factcheck_intro_4()">
+                                        <img src="./img/news_3-graph.png" alt="" class="news_img"><br>
+                                    </div>
+                                    <div class="info_wrap">
+                                        <div class="info">
+                                            <div class="name">
+                                                <img src="img/ava/talk/Image-60-1.png" class="icon_img video-comment profile"><br>
+                                                <div>&nbsp;&nbsp; 통계뉴스 유경제 기자</div>
+                                                <img src="img/icon/send.svg" class="icon_img ccc5"><br>
+                                            </div>
+                                        </div>
+                                        <div class="email cursor_pos_4 animate__animated" onclick="factcheck_intro_4()">
+                                            pjournal@factnews.com</div>
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div class="guide_wrap " id="guide_wrap_4" onclick="factcheck_intro_4()">
+                                <!-- 커서 가이드 -->
+                                <div class="cursor_wrap cursor_wrap_4">
+                                    <span class="cursor" x-placement="bottom">
+                                        <button class="react-joyride__beacon" type="button">
+                                            <span class="cursor_outer"></span>
+                                            <span class="cursor_inner"><span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <!-- 커서 가이드 -->
+                            </div>
+
+                            <div class="guide_wrap " id="guide_wrap_5" onclick="factcheck_intro_5()">
+                                <!-- 커서 가이드 -->
+                                <div class="cursor_wrap cursor_wrap_5">
+                                    <span class="cursor" x-placement="bottom">
+                                        <button class="react-joyride__beacon" type="button">
+                                            <span class="cursor_outer"></span>
+                                            <span class="cursor_inner"><span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <!-- 커서 가이드 -->
+                            </div>
+
+                            <div class="guide_wrap " id="guide_wrap_3" onclick="factcheck_intro_3()">
+                                <!-- 커서 가이드 -->
+                                <div class="cursor_wrap cursor_wrap_3">
+                                    <span class="cursor" x-placement="bottom">
+                                        <button class="react-joyride__beacon" type="button">
+                                            <span class="cursor_outer"></span>
+                                            <span class="cursor_inner"><span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <!-- 커서 가이드 -->
+                            </div>
+                            <div class="reactions news_react_pos cursor_pos_5 animate__animated"
+                                onclick="factcheck_intro_5()">
+                                    <div class="react_wrap">
+                                        <img src="img/icon/emoji-angry.svg" alt="" class="icon_img emoji">
+                                        화나요
+                                        <div>4</div>
+                                    </div>
+                                    <div class="react_wrap">
+                                        <img src="img/icon/emoji-laughing.svg" alt="" class="icon_img emoji">
+                                        웃겨요
+                                        <div>2</div>
+                                    </div>
+                                    <div class="react_wrap">
+                                        <img src="img/icon/emoji-expressionless.svg" alt="" class="icon_img emoji">
+                                        별로예요
+                                        <div>1</div>
+                                    </div>
+                                    <div class="react_wrap">
+                                        <img src="img/icon/emoji-kiss.svg" alt="" class="icon_img emoji">
+                                        공감돼요
+                                        <div>65</div>
+                                    </div>
+                                    <div class="react_wrap">
+                                        <img src="img/icon/hand-thumbs-up.svg" alt="" class="icon_img emoji">
+                                        좋아요
+                                        <div>412</div>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </main>
+                    <div class="newsbar">
+                        <div class="reactions">
+                            <div class="comment"><img src="img/icon/chat-square-dots.svg" class="icon_img bar"> 댓글</div>
+
+                            <div class="like like_topside animate__animated">
+                                <div class="share" onclick=""><img src="img/icon/share-fill.svg" class="icon_img bar">
+                                    공유</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal_wrap">
+                    <div class="FactCheck1_wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_1 animate__animated popup" id="factcheck_modal">
+                            <div class="title">⚠️잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1">팩</div>
+                                <div class="FC animate__animated" id="FC2">트</div>
+                                <div class="FC animate__animated" id="FC3">체</div>
+                                <div class="FC animate__animated" id="FC4">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="nextBtn1"
+                                    onclick="entry_1()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+                        <!--  모달창 입니다  -->
+                        <div class="modal1 animate__animated popup" id="modal1">
+                            <div class="title">⚠️잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    작성일이 너무 오래된 날짜가 아닌지 확인해 주세요. 너무 오래된 정보는 맞지 않은 정보일 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="okBtn1"
+                                    onclick="ok_1()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+                    </div>
+                    <div class="FactCheck2_wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_2 animate__animated popup" id="factcheck_modal">
+                            <div class="title">⚠️잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1_2">팩</div>
+                                <div class="FC animate__animated" id="FC2_2">트</div>
+                                <div class="FC animate__animated" id="FC3_2">체</div>
+                                <div class="FC animate__animated" id="FC4_2">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="nextBtn1"
+                                    onclick="entry_2()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+                        <!--  모달창 입니다  -->
+                        <div class="modal2 animate__animated popup" id="modal1">
+                            <div class="title">⚠️잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    해당 정보는 출처가 불분명합니다. 정보의 생산자가 전달한 정보의 전문가인지, 신뢰할 만한 정보를 생산하고 전달하는 사람인지 확인해 보세요.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="okBtn1"
+                                    onclick="ok_2()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+                    </div>
+                    
+                    <div class="FactCheck3wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_3 animate__animated popup" id="factcheck_modal">
+                            <div class="title">⚠️잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC3-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1_3">팩</div>
+                                <div class="FC animate__animated" id="FC2_3">트</div>
+                                <div class="FC animate__animated" id="FC3_3">체</div>
+                                <div class="FC animate__animated" id="FC4_3">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="nextBtn1"
+                                    onclick="entry_3()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal3_1 animate__animated popup" id="modal1">
+                            <div class="title">⚠️잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    선거여론조사결과 공표·보도 기준에 맞지 않는 내용입니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="okBtn1"
+                                    onclick="next_3()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal3_2 animate__animated popup" id="modal1">
+                            <div class="title">⚠️잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    여론조사 결과가 포함된 기사에서는 제시하는 결과가 공표·보도 기준에 부합하는가를 따져보아야 합니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="okBtn1"
+                                    onclick="ok_3()">확인</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+
+                    </div>
+
+
+                    <div class="FactCheck4wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_4 animate__animated popup" id="factcheck_modal">
+                            <div class="title">⚠️잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1_4">팩</div>
+                                <div class="FC animate__animated" id="FC2_4">트</div>
+                                <div class="FC animate__animated" id="FC3_4">체</div>
+                                <div class="FC animate__animated" id="FC4_4">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="nextBtn1"
+                                    onclick="entry_4()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal4_1 animate__animated popup" id="modal1">
+                            <div class="title">⚠️잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    그래프 이미지가 실제 지표 값과 다릅니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="okBtn1"
+                                    onclick="next_4()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal4_2 animate__animated popup" id="modal1">
+                            <div class="title">⚠️잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    그래프가 첨부된 기사를 읽을 때에는, 첨부된 그래프가 과장되지 않고 실제 수치와 일치하는지 확인해 보아야 합니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="okBtn1"
+                                    onclick="ok_4()">확인</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+
+                    </div>
+
+
+                    <div class="FactCheck5_wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_5 animate__animated popup" id="factcheck_modal">
+                            <div class="title">⚠️잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1_5">팩</div>
+                                <div class="FC animate__animated" id="FC2_5">트</div>
+                                <div class="FC animate__animated" id="FC3_5">체</div>
+                                <div class="FC animate__animated" id="FC4_5">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="nextBtn1"
+                                    onclick="entry_5()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal5_1 animate__animated popup" id="modal1">
+                            <div class="title">⚠️잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    좋아요 또는 공감 수가 많아도 정확한 정보가 아닐 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="okBtn1"
+                                    onclick="next_5()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal5_2 animate__animated popup" id="modal1">
+                            <div class="title">⚠️잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    사람들의 반응에 현혹되지 않도록 주의하세요
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" type="button" raised="true" id="okBtn1"
+                                    onclick="ok_5()">확인</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./js/NewsScene_2.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <title>디지털윤리교구</title>
+  <link href="./css/reset.css" rel="stylesheet" />
+  <link href="./css/layout.css" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <link href="./css/animate.css" rel="stylesheet" />
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="bg_phone">
+    <div id="wrap">
+      <div class="view">
+        <div class="container">
+          <!-- 말풍선 -->
+          <!-- <div class="cont-guide animate__animated">
+                        <div class="guide-text">클릭해보세요</div>
+                        <div class="guide-box">
+                            <img src="./img/cont_guide.png" alt="말풍선 이미지">
+                        </div>
+                    </div> -->
+          <!-- 말풍선 -->
+
+          <header class="hd_newslist">
+            <div class="hd_left" id="backBtn">
+              <img src="img/icon/arrow-left-short.svg" class="icon_img white99">
+            </div>
+            <div class="hd_center">
+              <h1 class="title_h1">팩트 뉴스</h1>
+            </div>
+            <div class="hd_right">
+              <img src="img/icon/three-dots.svg" class="icon_img white70">
+            </div>
+          </header>
+          <main id="main" class="news news_main news1" role="main">
+            <div class="news_item item1 news-scene">
+
+              <div class="info_wrap">
+                <div class="news-info">
+                  <div class="news-cont">
+                    <div class="info">
+                      <div class="category">생활</div>
+                    </div>
+                    <h2 class="title">[생활]알쏭달쏭 과일, 공복에 먹으면 약이 될까? 독이 될까?</h2>
+                  </div>
+                </div>
+                <div class="writer-info">
+                  <div class="info date_info animate__animated" onclick="factcheck_intro_1()">
+                    <div class="date cursor_pos_1">2022.08.17</div>
+                    <div class="views ">14:26</div>
+
+                  </div>
+                  <div class="guide_wrap " id="guide_wrap_1" onclick="factcheck_intro_1()">
+                    <!-- 커서 가이드 -->
+                    <div class="cursor_wrap cursor_wrap_1">
+                      <span class="cursor" x-placement="bottom">
+                        <button class="react-joyride__beacon" type="button">
+                          <span class="cursor_outer"></span>
+                          <span class="cursor_inner"><span>
+                        </button>
+                      </span>
+                    </div>
+                    <!-- 커서 가이드 -->
+                  </div>
+
+                  <div class="writer-profile animate__animated " onclick="factcheck_intro_2()">
+                    <div class="virtual">
+                      <!--프로필 사진 추가-->
+                      <img src="img/ava/talk/Image-60-20.png" class="icon_img profile">
+                    </div>
+                    <div class="name news-writer news-writer-pos cursor_pos_2">박기자 기자</div>
+                    <div class="guide_wrap " id="guide_wrap_2" onclick="factcheck_intro_2()">
+                      <!-- 커서 가이드 -->
+                      <div class="cursor_wrap cursor_wrap_2">
+                        <span class="cursor" x-placement="bottom">
+                          <button class="react-joyride__beacon" type="button">
+                            <span class="cursor_outer"></span>
+                            <span class="cursor_inner"><span>
+                          </button>
+                        </span>
+                      </div>
+                      <!-- 커서 가이드 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-main ">
+
+                <div id="switcher">
+                  <div class="label">스타일 변환기</div>
+                  <div class="button" id="switcher-large">텍스트 사이즈 늘리기(+)</div>
+                  <div class="button" id="switcher-small">텍스트 사이즈 줄이기(-)</div>
+                </div>
+
+                <div class="news-cont">
+                  <img src="./img/news_fruit1.png" alt="" class="news_img">
+                  <p class="here"><br>
+                    과일은 인류의 시작과 함께해온 먹거리이며, 음료와 간식으로 이용됐습니다.<br>
+                    또한 과수재배의 역사를 더듬어 올라가면 먹거리인 동시에 <br>
+                    약용의 기능도 하여온 것을 자주 볼 수 있습니다.<br>
+                    이렇게 우리에게 꼭 필요한 과일을 언제 섭취하고 계시나요?<br><br></p>
+
+                  <img src="./img/news_fruit2.png" alt="" class="news_img">
+
+                  <p class="journal animate__animated cursor_pos_3" onclick="factcheck_intro_3()">
+                    <br>
+                    팩트체크 학술지에서는 식전 섭취하는 과일이 건강에 미치는 악영향과 관련된
+                    실험을 진행했습니다.
+                    <br>
+                    결과 과일을 식전에 섭취한 실험 대상자의 위를 비롯한 각종 기관의 성능이
+                    현저히 저하되었다고 합니다.
+                  </p>
+                  </p>
+
+
+                  <p><br>식전에 먹는지, 식후에 먹는지에 따라서 과일의 효능이 달라집니다.<br>
+                    식전에 먹고 있다면 독을 먹고 있는 것과 같습니다.
+                    공복에 섭취한 과일은 위를 쉽게 통과하지 못합니다. <br>
+                    음식물을 섭취하지 못해 위가 긴장된 상태이기 때문입니다.
+                    <br>
+
+                    따라서, 과일의 당이 발효해 속을 답답하게 할 수 있습니다.<br><br>
+                    또한, 췌장에도 무리를 줍니다. 췌장의 과부하로 인한 당뇨병의 위험 또한 무시할 수 없습니다.
+
+                  </p>
+
+                  <img src="./img/news_fruit2.png" alt="" class="news_img">
+
+                  <p><br><br>
+                    이처럼 공복에 먹는 과일은 질병의 위험을 부를 수 있으니 꼭 식후에 섭취해야 합니다.<br>
+                    식후에 과일을 조금씩 먹는 습관이 생기면 다이어트와 질병 예방에 도움이 될 것입니다.
+                  </p><br> <br><br><br>
+
+
+                  <div class="info_wrap">
+                    <div class="info">
+                      <div class="name">
+                        <img src="img/ava/talk/Image-60-20.png" class="icon_img video-comment profile"><br>
+                        <div>&nbsp;&nbsp; 팩트뉴스 박기자 기자 &nbsp;</div>
+                        <img src="img/icon/camera.svg" class="icon_img ccc5"><br>
+                      </div>
+                      <!-- <div class="another-news more_news animate__animated cursor_pos_4"
+                                                onclick="factcheck_intro_4()">
+                                                다른 기사 보기
+                                                <img src="img/icon/chevron-right.svg" class="icon_img">
+                                            </div> -->
+                    </div>
+                    <div class="email cursor_pos_4 animate__animated" onclick="factcheck_intro_4()">
+                      pjournal@factnews.com</div>
+                  </div>
+                  <div class="guide_wrap " id="guide_wrap_4" onclick="factcheck_intro_4()">
+                    <!-- 커서 가이드 -->
+                    <div class="cursor_wrap cursor_wrap_4">
+                      <span class="cursor" x-placement="bottom">
+                        <button class="react-joyride__beacon" type="button">
+                          <span class="cursor_outer"></span>
+                          <span class="cursor_inner"><span>
+                        </button>
+                      </span>
+                    </div>
+                    <!-- 커서 가이드 -->
+                  </div>
+
+                  <div class="guide_wrap " id="guide_wrap_5" onclick="factcheck_intro_5()">
+                    <!-- 커서 가이드 -->
+                    <div class="cursor_wrap cursor_wrap_5">
+                      <span class="cursor" x-placement="bottom">
+                        <button class="react-joyride__beacon" type="button">
+                          <span class="cursor_outer"></span>
+                          <span class="cursor_inner"><span>
+                        </button>
+                      </span>
+                    </div>
+                    <!-- 커서 가이드 -->
+                  </div>
+
+                  <div class="guide_wrap " id="guide_wrap_3" onclick="factcheck_intro_3()">
+                    <!-- 커서 가이드 -->
+                    <div class="cursor_wrap cursor_wrap_3">
+                      <span class="cursor" x-placement="bottom">
+                        <button class="react-joyride__beacon" type="button">
+                          <span class="cursor_outer"></span>
+                          <span class="cursor_inner"><span>
+                        </button>
+                      </span>
+                    </div>
+                    <!-- 커서 가이드 -->
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="reactions news_react_pos cursor_pos_5 animate__animated" onclick="factcheck_intro_5()">
+
+                <div class="react_wrap">
+                  <img src="img/icon/emoji-angry.svg" alt="" class="icon_img emoji">
+                  화나요
+                  <div>0</div>
+                </div>
+                <div class="react_wrap">
+                  <img src="img/icon/emoji-laughing.svg" alt="" class="icon_img emoji">
+                  웃겨요
+                  <div>0</div>
+                </div>
+                <div class="react_wrap">
+                  <img src="img/icon/emoji-expressionless.svg" alt="" class="icon_img emoji">
+                  별로예요
+                  <div>132</div>
+                </div>
+                <div class="react_wrap">
+                  <img src="img/icon/emoji-kiss.svg" alt="" class="icon_img emoji">
+                  공감돼요
+                  <div>542</div>
+                </div>
+                <div class="react_wrap">
+                  <img src="img/icon/hand-thumbs-up.svg" alt="" class="icon_img emoji">
+                  좋아요
+                  <div>122</div>
+                </div>
+              </div>
+          </main>
+          <div class="newsbar">
+            <div class="reactions">
+              <div class="comment"><img src="img/icon/chat-square-dots.svg" class="icon_img bar"> 댓글</div>
+
+              <div class="like like_topside animate__animated">
+                <div class="share" onclick=""><img src="img/icon/share-fill.svg" class="icon_img bar">
+                  공유</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="test.js"> </script>
+</body>
+
+</html>

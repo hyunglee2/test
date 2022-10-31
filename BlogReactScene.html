@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>디지털윤리교구</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/animate.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="bg_phone">
+        <div id="wrap">
+            <div class="view">
+                <div class="container">
+                    <header class="hd_blog">
+                        <div class="hd_left" id="backBtn">
+                            <img src="img/icon/chevron-left.svg" class="icon_img white">
+                        </div>
+                        <div class="hd_center">
+                            <h1 class="title_h1">어디어디카페</h1>
+                        </div>
+                        <div class="hd_right">
+                            <img src="img/icon/list.svg" class="icon_img white">
+                        </div>
+                    </header>
+                    <main id="main" class="blog blog_main blog1-1" role="main">
+
+                        <!-- 말풍선 -->
+                        <div class="cont-guide animate__animated">
+
+                            <div class="guide-box">
+                                <img src="./img/cont_guide.png" id="blog_guide" alt="말풍선 이미지">
+                            </div>
+                            <div class="guide-text">댓글을<br>꾹 눌러보세요</div>
+                        </div>
+                        <!-- 말풍선 -->
+
+                        <div class="info_wrap">
+                            <div class="blog-info">
+                                <div class="comment-info">
+                                    <div>댓글</div>
+                                    <div class="comment">2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 댓글 1 -->
+                        <div class="blog_item blog_item1 comment">
+                            <!-- <div class="info_wrap"> -->
+                            <div class="writer-profile">
+                                <div class="virtual">
+                                    <!--프로필 사진 추가-->
+                                </div>
+                                <div class="writer-info">
+                                    <div class="name">궁금이</div>
+                                    <div class="info">
+                                        <div class="date">2022.08.17</div>
+                                        <div class="time">13:22</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <div class="comment-cont">
+                                <div>
+                                    복용량/방법 좀 알수있을까요?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item blog_item2 reply animate__animated" onclick="paste()">
+                            <div class="reply_item">
+                                <div class="icon_reply">
+                                    <img class="icon_reply" src="img/icon/arrow-return-right.svg">
+                                </div>
+                                <div class="writer-profile">
+                                    <div class="virtual">
+                                        <!--프로필 사진 추가-->
+                                    </div>
+                                    <div class="writer-info">
+                                        <div class="name">나는야주스될거야</div>
+                                        <div class="info">
+                                            <div class="date">2022.08.17</div>
+                                            <div class="time">13:22</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-cont">
+                                <div>
+                                    사람용 구충제인 비타민BX도 구글에서 검색해보세요. 2002년 기사에 보니 이미 강력한 항암효과가 입증돼 재약회사에서 개발 독점 판매권을 사 들였네요.
+                                    비타민BX도 곧 이렇게 될수도 있겠어요.
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </main>
+                <div class="blogbar">
+                    <div class="reactions">
+                        <div class="like like_topside animate__animated">
+                            <p class="heart">❤️</p> 81
+                        </div>
+                        <div class="comment"><img src="img/icon/chat-dots-fill.svg" class="icon_img bar"></div>
+                    </div>
+                </div>
+
+
+
+                <!--  모달창 입니다 : 복사하기 -->
+                <!-- <div class="animate__animated paste_modal popup" id="paste_modal" onclick="modal_loading()">
+            <div class="paste_title paste_title1">
+              <div class="title copy" id="blog_title">
+                복사하기
+              </div>
+            </div>
+            <div class="paste_title paste_title2">
+                <div class="title send" id="blog_title">
+                  전달하기
+                </div>
+              </div>
+              <div class="paste_title paste_title3">
+                <div class="title share" id="blog_title">
+                  공유하기
+                </div>
+              </div>
+  
+          </div> -->
+
+                <!-- 여기까지 모달창 -->
+
+                <!-- 말풍선 -->
+                <!-- <div class="cont-guide animate__animated guide2">
+                                
+            <div class="guide-box">
+                <img src="./img/cont_guide.png" id="blog_guide" alt="말풍선 이미지">
+            </div>
+            <div class="guide-text">꾹<br>눌러보세요</div>
+        </div> -->
+                <!-- 말풍선 -->
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/BlogReactScene.js"> </script>
+</body>
+
+</html>

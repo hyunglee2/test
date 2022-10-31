@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>디지털윤리교구</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/animate.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <div id="wrap">
+            <div class="view">
+                <div class="container">
+                    <header class="hd_videolist">
+                        <div class="hd_left" id="backBtn">
+                            <img src="img/icon/chevron-left.svg" class="icon_img white">
+                        </div>
+                        <div class="hd_center">
+                            <h1 class="title_h1">동영상</h1>
+                        </div>
+                        <div class="hd_right">
+                            <img src="img/icon/three-dots.svg" class="icon_img white70">
+                        </div>
+                    </header>
+                    <main id="main" class="videolist" role="main">
+                        <!-- 말풍선 -->
+                        <!-- <div class="cont-guide animate__animated">
+                            <div class="guide-text">터치해보세요</div>
+                            <div class="guide-box">
+                                <img src="./img/cont_guide.png" alt="말풍선 이미지">
+                            </div>
+                        </div> -->
+                        <!-- 말풍선 -->
+
+                        <div class="video-list">
+
+                            <!-- 비디오 1 -->
+                            <div class="video-list_item video1 "
+                                onclick="location.href='VideoScene_1.html'">
+                                <div class="video-thumbnail thumbnail1">
+                                    <!--썸네일 이미지 추가-->
+                                    <img src="./img/video1.png" alt="">
+                                </div>
+                                <div class="creater-info">
+                                    <div class="creater-profile">
+                                        <div class="virtual">
+                                            <!--프로필 사진 추가-->
+                                            <img src="./img/ava/talk/82.png" width="100%">
+                                        </div>
+                                    </div>
+                                    <div class="video-cont">
+                                        <p class="title video1_title animate__animated cursor_pos_1">걸그룹 B양의 일찐 과거</p>
+                                        <div class="info">
+                                            <div class="name">팩트폭격기 &nbsp;·&nbsp;</div>
+                                            <div class="views">조회수 1.6만회 &nbsp;·&nbsp;</div>
+                                            <div class="date">3일 전</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="guide_wrap " id="guide_wrap_1">
+                                    <!-- 커서 가이드 -->
+                                    <div class="cursor_wrap cursor_wrap_1">
+                                        <span class="cursor" x-placement="bottom">
+                                            <button class="react-joyride__beacon" type="button">
+                                                <span class="cursor_outer"></span>
+                                                <span class="cursor_inner"><span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <!-- 커서 가이드 -->
+                                </div>
+                            </div>
+
+                            <!-- 비디오 2 -->
+                            <div class="video-list_item video2 "
+                                onclick="location.href='VideoScene_2.html'">
+                                <div class="video-thumbnail thumbnail1">
+                                    <!--썸네일 이미지 추가-->
+                                    <img src="./img/video2.png" alt="">
+                                </div>
+                                <div class="creater-info">
+                                    <div class="creater-profile">
+                                        <div class="virtual">
+                                            <!--프로필 사진 추가-->
+                                            <img src="./img/ava/talk/81.png" width="100%">
+                                        </div>
+                                    </div>
+                                    <div class="video-cont">
+                                        <p class="title video2_title animate__animated cursor_pos_2"> 하루 한잔, 녹차 루틴이 무조건인 이유</p>
+                                        <div class="info">
+                                            <div class="name">건강전도사 &nbsp;·&nbsp;</div>
+                                            <div class="views">조회수 561회 &nbsp;·&nbsp;</div>
+                                            <div class="date">6시간 전</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="guide_wrap " id="guide_wrap_2">
+                                    <!-- 커서 가이드 -->
+                                    <div class="cursor_wrap cursor_wrap_2">
+                                        <span class="cursor" x-placement="bottom">
+                                            <button class="react-joyride__beacon" type="button">
+                                                <span class="cursor_outer"></span>
+                                                <span class="cursor_inner"><span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <!-- 커서 가이드 -->
+                                </div>
+                            </div>
+
+                            <!-- 비디오 3 -->
+                            <div class="video-list_item video3 "
+                                onclick="location.href='VideoScene_3.html'">
+                                <div class="video-thumbnail thumbnail3">
+                                    <!--썸네일 이미지 추가-->
+                                    <img src="./img/video3.png" alt="">
+                                </div>
+                                <div class="creater-info">
+                                    <div class="creater-profile">
+                                        <div class="virtual">
+                                            <!--프로필 사진 추가-->
+                                            <img src="./img/ava/talk/64.png" width="100%">
+                                        </div>
+                                    </div>
+                                    <div class="video-cont">
+                                        <p class="title video3_title animate__animated cursor_pos_3"> 태양광 패널, 알고보니 중금속 범벅?!</p>
+                                        <div class="info">
+                                            <div class="name">환경지키미 &nbsp;·&nbsp;</div>
+                                            <div class="views">조회수 896회 &nbsp;·&nbsp;</div>
+                                            <div class="date">3개월 전</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="guide_wrap " id="guide_wrap_3">
+                                    <!-- 커서 가이드 -->
+                                    <div class="cursor_wrap cursor_wrap_3">
+                                        <span class="cursor" x-placement="bottom">
+                                            <button class="react-joyride__beacon" type="button">
+                                                <span class="cursor_outer"></span>
+                                                <span class="cursor_inner"><span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <!-- 커서 가이드 -->
+                                </div>
+                            </div>
+
+                            <!-- 비디오 4 -->
+                            <div class="video-list_item video4 "
+                                onclick="location.href='VideoScene_4.html'">
+                                <div class="video-thumbnail thumbnail1">
+                                    <!--썸네일 이미지 추가-->
+                                    <img src="./img/video4.png" alt="">
+                                </div>
+                                <div class="creater-info">
+                                    <div class="creater-profile">
+                                        <div class="virtual">
+                                            <!--프로필 사진 추가-->
+                                            <img src="./img/ava/talk/78.png" width="100%">
+                                        </div>
+                                    </div>
+                                    <div class="video-cont">
+                                        <p class="title video4_title animate__animated cursor_pos_4">충격! 공격 직전의 CCTV 입수 공개</p>
+                                        <div class="info">
+                                            <div class="name">제보먹는 진실 &nbsp;·&nbsp;</div>
+                                            <div class="views">조회수 8.4천회 &nbsp;·&nbsp;</div>
+                                            <div class="date">1시간 전</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="guide_wrap " id="guide_wrap_4">
+                                    <!-- 커서 가이드 -->
+                                    <div class="cursor_wrap cursor_wrap_4">
+                                        <span class="cursor" x-placement="bottom">
+                                            <button class="react-joyride__beacon" type="button">
+                                                <span class="cursor_outer"></span>
+                                                <span class="cursor_inner"><span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <!-- 커서 가이드 -->
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <div class="videobar">
+                        <div class="videobar_wrap">
+                            <img src="img/icon/house-fill.svg" class="icon_img head70">
+                            <div>홈</div>
+                        </div>
+                        <div class="videobar_wrap">
+                            <img src="img/icon/fire.svg" class="icon_img head70">
+                            <div>인기</div>
+                        </div>
+                        <div class="videobar_wrap">
+                            <img src="img/icon/plus-circle.svg" class="icon_img head99">
+                        </div>
+                        <div class="videobar_wrap">
+                            <img src="img/icon/collection-play.svg" class="icon_img head70">
+                            <div>구독</div>
+                        </div>
+                        <div class="videobar_wrap">
+                            <img src="img/icon/folder.svg" class="icon_img head70">
+                            <div>보관함</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/VideoList.js"> </script>
+
+</body>
+
+</html>
