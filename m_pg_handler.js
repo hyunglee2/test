@@ -51,6 +51,7 @@ function runConfetti() {
 //페이지 로드 시 전체 동작 코드 (DOM 로딩 후 동작)
 $(document).ready(function () {
     firstPageLoader();
+    $("#wrap").addClass("zoomIn");
 });
 
 

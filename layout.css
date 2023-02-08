@@ -499,7 +499,10 @@ body {
   width: 100%;
   height: 100%;
   background: #eee;
-  zoom: 2
+}
+
+.zoomIn{
+   zoom: 2
 }
 
 #wrap .view {
