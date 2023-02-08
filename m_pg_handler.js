@@ -51,7 +51,7 @@ function runConfetti() {
 //페이지 로드 시 전체 동작 코드 (DOM 로딩 후 동작)
 $(document).ready(function () {
     firstPageLoader();
-    $("#wrap").addClass("zoomIn");
+    
 });
 
 
@@ -71,6 +71,7 @@ function firstPageLoader() {
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#start-btn').click(function () {
+    $("#wrap").addClass("zoomIn");
     $('.nav_btn_wrap').css('display', 'block');
     //$('.nav_btn_wrap').css('display', 'flex');
     $('.start_btn_wrap').css('display', 'none');
