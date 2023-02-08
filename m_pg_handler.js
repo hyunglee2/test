@@ -28,7 +28,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 //창 비율 고정
-let vh = window.innerHeight * 0.01;
+let vh = window.innerHeight * 0.02;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 window.addEventListener("resize", () => {
@@ -71,7 +71,6 @@ function firstPageLoader() {
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#start-btn').click(function () {
-    $("#wrap").addClass("zoomIn");
     $('.nav_btn_wrap').css('display', 'block');
     //$('.nav_btn_wrap').css('display', 'flex');
     $('.start_btn_wrap').css('display', 'none');

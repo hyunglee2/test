@@ -1,3 +1,7 @@
+iframe {
+    width: -webkit-fill-available;
+}
+
 /* ------------confetti CSS------------ */
 #canvas-container-div {
   position: absolute;
