@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>SDF</title>
+    <link href="../common/styles/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./layout.css" rel="stylesheet" />
+    <link href="../common/styles/animate.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="../common/js/confetti.js"> </script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <div class="contain">
+                    <main class="main" id="main" role="main">
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            잠깐!
+                                        </h5>
+                                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button> -->
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button type="button" class="btn btn-secondary btn-lg"
+                                            data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                        <div class="page" id="p0">
+                            <div class="page_wrap">
+                                <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                <div class="w-100 flex-center-center">
+                                    <!--<h3 class="fontSz">💎💎💎</h3>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 1 ------------------------------>
+                        <div class="page" id="p1">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page1</h1>
+                                <div class="bg-image"
+                                    style="background-image: url('./assets/image/map.png');  height: 100%;">
+                                    <div
+                                        class="under_bar addShadow d-flex flex-column justify-content-center align-items-center">
+                                        <div class="container d-flex flex-column align-items-center"
+                                            style="min-height:40%">
+                                            <div class="w-100 px-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center h-30">
+                                                <img src=./assets/image/29.png class="icon">
+                                            </div>
+                                            <div class="tab w-100 flex-fill d-flex justify-content-center mx-4 mb-3">
+                                                <div class="txt-wrap d-flex w-90">
+                                                    <div class="txt fontSz">
+                                                        <div class="fontSz">
+                                                            <p class="">승합차</p>
+                                                        </div>
+                                                        <div>
+                                                            넓고 쾌적한 이동이 필요할 때, 승합차 예약 서비스를 이용해보세요.<br>
+                                                            설정한 도착지까지 확정된 요금으로 예약 가능합니다.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 w-100 bg-secondary bg-opacity-10" style="min-height:30%">
+                                            <div class=" h-100 d-flex flex-column align-items-center">
+                                                <div class="w-100 d-flex justify-content-between mb-1">
+                                                    <ul class="nav justify-content-center">
+                                                        <div class="cursor_pos_1">
+                                                            <li class="nav-item pg_1_answer fontSz">
+                                                                <a class="nav-link fontB disabled p-2 pg_1_answer fontSz"
+                                                                    aria-current="page">자동결제 등록</a>
+                                                            </li>
+                                                            <!-- 커서 가이드 -->
+                                                            <div class="cursor_wrap cursor_wrap_1 pg_1_answer">
+                                                                <span class="cursor pg_1_answer" x-placement="bottom">
+                                                                    <button class="react-joyride__beacon pg_1_answer"
+                                                                        type="button">
+                                                                        <span class="cursor_outer pg_1_answer"></span>
+                                                                        <span class="cursor_inner pg_1_answer"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </ul>
+                                                    <ul class="nav justify-content-center">
+                                                        <li class="nav-item fontSz">
+                                                            <a class="nav-link disabled p-2 fontSz">쿠폰·포인트 0P</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="w-100 h-75 border-top pt-3">
+                                                    <div class="d-flex justify-content-between align-items-center"
+                                                        style="min-height:30%">
+                                                        <ul class="nav justify-content-center align-items-center">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link disabled active p-2 fontSz"
+                                                                    aria-current="page ">본인탑승 &gt;</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="nav flex-column align-items-end me-2">
+                                                            <li class="nav-item d-flex align-items-center">
+                                                                <div class="fontSz">예상</div>
+                                                                <h4 class="fontSz">12,400원</h4>
+                                                            </li>
+                                                            <li class="nav-item txt-sm fontSz">
+                                                                <div>예약비 무료</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button type="button"
+                                                        class="w-100 btn btn-primary btn-lg mt-2 fontSz">
+                                                        호출하기
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 2 ------------------------------>
+                        <div class="page" id="p2">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                                <div class="bg-image"
+                                    style="background-image: url('./assets/image/map.png');  height: 100%;">
+                                    <div
+                                        class="under_bar addShadow d-flex flex-column justify-content-center align-items-center">
+                                        <div class="container d-flex flex-column align-items-center" style="height:65%">
+                                            <div
+                                                class="w-100 h-10 mt-2 mx-1 d-flex justify-content-between align-items-center fontSz">
+                                                <div class="w-28" style="font-size: larger;">
+                                                    결제수단
+                                                </div>
+                                                <button type="button"
+                                                    class="btn addBtn btn-sm text-sm btn-outline-secondary ">
+                                                    결제수단추가
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="w-100 flex-fill d-flex justify-content-center align-items-center">
+                                                <div
+                                                    class="btn payBtn  btn-outline-secondary d-flex flex-column justify-content-center align-items-center pg_2_answer fontSz cursor_pos_2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                        fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"
+                                                        class="pg_2_answer">
+                                                        <path
+                                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                                    </svg>
+                                                    <div class="pg_2_answer">
+                                                        편리한 자동결제 수단 등록
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                <span class="cursor pg_2_answer" x-placement="bottom">
+                                                    <button class="react-joyride__beacon pg_2_answer" type="button">
+                                                        <span class="cursor_outer pg_2_answer"></span>
+                                                        <span class="cursor_inner pg_2_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center p-2 fontSz ms-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                                                </svg>
+                                                <div class="p-2">
+                                                    포인트
+                                                </div>
+                                                <div class="p-2">
+                                                    0P
+                                                </div>
+                                                <button type="button"
+                                                    class="btn orgBtn p-2 btn-sm btn-outline-secondary" width="25"
+                                                    height="25">
+                                                    충전
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <div class="form-check form-switch p-2">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckDefault"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center p-2 ms-4  fontSz">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13Z" />
+                                                </svg>
+                                                <div class="p-2">
+                                                    쿠폰
+                                                </div>
+                                                <div class="p-2">
+                                                    쿠폰 없음
+                                                </div>
+                                                <button type="button" class="btn p-2 btn-sm btn-outline-secondary"
+                                                    width="25" height="25">
+                                                    등록
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <div class="form-check form-switch p-2">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckDefault"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 w-100 bg-secondary bg-opacity-10" style="height:35%">
+                                            <div class="0 d-flex flex-column align-items-center justify-content-center">
+                                                <div class="w-100 h-25 d-flex justify-content-between">
+                                                    <ul class="nav justify-content-center">
+                                                        <li class="nav-item fontSz">
+                                                            <a class="nav-link active p-2 text-black-50"
+                                                                aria-current="page">할인 내역</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="nav justify-content-center">
+                                                        <li class="nav-item fontSz">
+                                                            <a class="nav-link disabled p-2">0P / 0원</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="w-100 h-75">
+                                                    <div class="h-50 d-flex justify-content-between align-items-center">
+                                                        <ul class="nav justify-content-center align-items-center">
+                                                            <li class="nav-item fontSz">
+                                                                <a class="nav-link disabled active p-2"
+                                                                    aria-current="page">예상 결제 금액</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="nav flex-column align-items-end">
+                                                            <li class="nav-item fontSz">
+                                                                <div>36,800원</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button fontSz"
+                                                class="w-100 btn btn-secondary btn-lg d-flex justify-content-center align-items-center mt-2"
+                                                disabled>
+                                                적용하기
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-bottom text-white-50 mt-3 fontSz">
+                                    취소
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 3 ------------------------------>
+                        <div class="page" id="p3">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page3</h1>
+                                <div class="bg-image"
+                                    style="background-image: url('./assets/image/map.png');  height: 100%;">
+                                    <div class="under_bar addShadow d-flex justify-content-start flex-column fontSz">
+                                        <div class="w-100 d-flex justify-content-start">
+                                            <h4 class="d-flex p-4 fw-bold">
+                                                결제수단
+                                            </h4>
+                                        </div>
+                                        <div class="w-100 px-4 flex-column d-flex justify-content-center">
+                                            <button type="button"
+                                                class="btn w-100 h-50 btn-lg btn-light d-flex flex-column justify-content-center align-items-center border-g fontSz">
+                                                <div>
+                                                    택시앱 T 포인트
+                                                </div>
+                                            </button>
+                                            <div class="w-100 cursor_pos_3">
+                                                <button type="button"
+                                                    class="btn w-100 h-50 mt-3 btn-lg btn-light d-flex flex-column justify-content-center align-items-center border-g pg_3_answer fontSz">
+                                                    <div class="pg_3_answer">
+                                                        신용/체크카드
+                                                    </div>
+                                                </button>
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_3 pg_3_answer">
+                                                    <span class="cursor pg_3_answer" x-placement="bottom">
+                                                        <button class="react-joyride__beacon pg_3_answer" type="button">
+                                                            <span class="cursor_outer pg_3_answer"></span>
+                                                            <span class="cursor_inner pg_3_answer"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 4 ------------------------------>
+                        <div class="page" id="p4">
+                            <div class="page_wrap">
+                                <h1 class="pg_title">Page4</h1>
+                                <div class="popup addShadow-darker">
+                                    <div class="wrap">
+                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-center  px-3">
+                                            <li class="nav-item li1">
+                                                <div class="w-100 d-flex justify-content-start align-items-center mt-3">
+                                                    <div class="image">
+                                                        <!-- 이미지 추가 -->
+                                                        <img class="icon_b" src="./assets/image/37.png" alt="">
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1 fontSz">
+                                                        <div class="flex-fill fw-bold">
+                                                            간편페이
+                                                        </div>
+                                                        <div class="text-black-50 text-sm">
+                                                            (주)간편페이
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item li1">
+                                                <div class="w-100 d-flex justify-content-start align-items-start">
+
+                                                    <div
+                                                        class="nav d-flex flex-fill flex-column justify-content-start align-items-start px-2 fontSz">
+                                                        <div
+                                                            class="w-100 fw-bold d-flex align-items-center mb-2 pg_4_answer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="currentColor"
+                                                                class="bi bi-check-circle pg_4_answer me-1"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                <path
+                                                                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                            </svg>
+                                                            전체 동의하기
+                                                        </div>
+                                                        <div class="w-100 text-black-50 fontSz"
+                                                            style="font-size: smaller;">
+                                                            간편페이 서비스 제공을 위해 회원번호와 함께 개인정
+                                                            보가 제공됩니다. 보다 자세한 개인정보 제공항목은 동
+                                                            의 내용에서 확인하실 수 있습니다. 정보는 서비스 탈퇴
+                                                            시 지체없이 파기됩니다.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <div class="nav-under text-secondary txt-sm mt-4">
+                                                <div
+                                                    class="nav-under w-100 text-secondary d-flex justify-content-between fontSz">
+                                                    <div class="fontSz" style="font-size: smaller;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-check-lg"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                        </svg>[필수] 개인정보 제3자 제공 동의
+                                                    </div>
+                                                    <div class="fontSz" style="font-size: smaller;">보기</div>
+                                                </div>
+                                                <div class="nav-under text-secondary txt-sm">
+                                                    <div
+                                                        class="nav-under w-100 text-secondary d-flex justify-content-between fontSz">
+                                                        <div class="fontSz" style="font-size: smaller;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor" class="bi bi-check-lg"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                            </svg>[필수] 서비스 접근 권한
+                                                        </div>
+                                                        <div class="fontSz" style="font-size: smaller;">보기</div>
+                                                    </div>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn btn-y w-100 fontSz">
+                                        동의하고 계속하기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 5 ------------------------------>
+                        <div class="page" id="p5">
+                            <div class="page_wrap">
+                                <h1 class="pg_title">Page5</h1>
+                                <div class="popup addShadow-darker">
+                                    <div class="wrap">
+                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-center  px-3">
+                                            <li class="nav-item li1">
+                                                <div class="w-100 d-flex justify-content-start align-items-center mt-3">
+                                                    <div class="image">
+                                                        <!-- 이미지 추가 -->
+                                                        <img class="icon_b" src="./assets/image/37.png" alt="">
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1 fontSz">
+                                                        <div class="flex-fill fw-bold border-g">
+                                                            간편페이
+                                                        </div>
+                                                        <div class="text-black-50 text-sm border-g">
+                                                            (주)간편페이
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item li1">
+                                                <div class="w-100 d-flex justify-content-start align-items-start">
+
+                                                    <div
+                                                        class="nav d-flex flex-fill flex-column justify-content-start align-items-start px-2 fontSz">
+                                                        <div class="w-100 fw-bold d-flex align-items-center mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="currentColor" style="color: #FFD400;"
+                                                                class="bi bi-check-circle-fill me-1"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                            </svg>
+                                                            전체 동의하기
+                                                        </div>
+                                                        <div class="w-100 text-black-50 fontSz"
+                                                            style="font-size: smaller;">
+                                                            간편페이 서비스 제공을 위해 회원번호와 함께 개인정
+                                                            보가 제공됩니다. 보다 자세한 개인정보 제공항목은 동
+                                                            의 내용에서 확인하실 수 있습니다. 정보는 서비스 탈퇴
+                                                            시 지체없이 파기됩니다.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <div class="nav-under text-secondary txt-sm mt-4">
+                                                <div
+                                                    class="nav-under w-100 text-secondary d-flex justify-content-between fontSz">
+                                                    <div class="fontSz" style="font-size: smaller;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: #FFD400;" fill="currentColor"
+                                                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                        </svg>[필수] 개인정보 제3자 제공 동의
+                                                    </div>
+                                                    <div class="fontSz" style="font-size: smaller;">보기</div>
+                                                </div>
+                                                <div class="nav-under text-secondary txt-sm">
+                                                    <div
+                                                        class="nav-under w-100 text-secondary d-flex justify-content-between fontSz">
+                                                        <div class="fontSz" style="font-size: smaller;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                style="color: #FFD400;" height="16" fill="currentColor"
+                                                                class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                            </svg>[필수] 서비스 접근 권한
+                                                        </div>
+                                                        <div class="fontSz" style="font-size: smaller;">보기</div>
+                                                    </div>
+                                        </ul>
+                                    </div>
+                                    <div class="w-100 cursor_pos_5">
+                                        <button type="button" class="btn btn-y w-100 fontSz pg_5_answer">
+                                            동의하고 계속하기
+                                        </button>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_5 pg_5_answer">
+                                            <span class="cursor pg_5_answer" x-placement="bottom">
+                                                <button class="react-joyride__beacon pg_5_answer" type="button">
+                                                    <span class="cursor_outer pg_5_answer"></span>
+                                                    <span class="cursor_inner pg_5_answer"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                                <div class="w-100 d-flex justify-content-start align-items-center py-3 px-3">
+                                    <div class="back_btn" style="box-shadow:0 0 0;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="agree w-100 h-20 d-flex justify-content-between align-items-center px-5">
+                                    <div class="wait d-flex flex-column fontSz">
+                                        <h3 class="fw-bold">
+                                            잠깐만요!
+                                        </h3>
+                                        <div class="pt-2 text-black-50">
+                                            3,600만명이 선택한 편리한 서비스를 경험해보세요!
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            fill="currentColor" class="bi bi-sticky" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 15 8.586V2.5A1.5 1.5 0 0 0 13.5 1h-11zM2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V8H9.5A1.5 1.5 0 0 0 8 9.5V14H2.5a.5.5 0 0 1-.5-.5v-11zm7 11.293V9.5a.5.5 0 0 1 .5-.5h4.293L9 13.793z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div
+                                    class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="w-80 tab d-flex justify-content-start align-items-center mb-3 fontSz"
+                                        style="background-color:#fff;">
+                                        <div class="check">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                            </svg>
+                                        </div>
+                                        <div class="fw-bold">
+                                            약관 전체동의
+                                        </div>
+                                    </div>
+                                    <div class="w-75 container d-flex flex-column text-secondary">
+                                        <div class="nav-under text-secondary fontSz pg_6_answer">
+                                            <div class="fontSz pg_6_answer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                </svg> 필수 항목 전체동의
+                                            </div>
+                                            <div class="line fontSz" style="font-size: smaller;">접기</div>
+                                        </div>
+                                        <div class="nav-under text-secondary">
+                                            <div class="fontSz" style="font-size: smaller;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> (필수) 간편페이 이용약관
+                                            </div>
+                                            <div class="fontSz" style="font-size: smaller;">&#62;</div>
+                                        </div>
+                                        <div class="nav-under text-secondary">
+                                            <div class="fontSz" style="font-size: smaller;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> (필수) 간편페이 전자금융거래약관
+                                            </div>
+                                            <div class="fontSz" style="font-size: smaller;">&#62;</div>
+                                        </div>
+                                        <div class="nav-under text-secondary">
+                                            <div class="fontSz" style="font-size: smaller;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> (필수) 개인정보 수집 및 이용 동의
+                                            </div>
+                                            <div class="fontSz" style="font-size: smaller;">&#62;</div>
+                                        </div>
+                                        <div class="nav-under text-secondary">
+                                            <div class="fontSz" style="font-size: smaller;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> (필수) 간편페이 개인정보 제3자 제공동의
+                                            </div>
+                                            <div class="fontSz" style="font-size: smaller;">&#62;</div>
+                                        </div>
+                                        <div class="nav-under text-secondary">
+                                            <div class="fontSz" style="font-size: smaller;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> (선택) 마케팅 및 광고성 정보 수신 동의
+                                            </div>
+                                            <div class="fontSz" style="font-size: smaller;">&#62;</div>
+                                        </div>
+                                        <div class="nav-under text-secondary">
+                                            <div class="fontSz" style="font-size: smaller;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> (선택) 위치기반서비스 이용약관
+                                            </div>
+                                            <div class="fontSz" style="font-size: smaller;">&#62;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                <div class="w-100 d-flex justify-content-start align-items-center py-3 px-3">
+                                    <div class="back_btn" style="box-shadow:0 0 0;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="agree w-100 h-20 d-flex justify-content-between align-items-center px-5">
+                                    <div class="wait d-flex flex-column fontSz">
+                                        <h3 class="fw-bold">
+                                            잠깐만요!
+                                        </h3>
+                                        <div class="pt-2 text-black-50">
+                                            3,600만명이 선택한 편리한 서비스를 경험해보세요!
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            fill="currentColor" class="bi bi-sticky" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 15 8.586V2.5A1.5 1.5 0 0 0 13.5 1h-11zM2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V8H9.5A1.5 1.5 0 0 0 8 9.5V14H2.5a.5.5 0 0 1-.5-.5v-11zm7 11.293V9.5a.5.5 0 0 1 .5-.5h4.293L9 13.793z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div
+                                    class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="w-80 tab d-flex justify-content-start align-items-center mb-3 fontSz"
+                                        style="background-color:#fff;">
+                                        <div class="check">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                            </svg>
+                                        </div>
+                                        <div class="fw-bold">
+                                            약관 전체동의
+                                        </div>
+                                    </div>
+
+                                    <div class="w-75 container d-flex flex-column text-secondary">
+                                        <div class="nav-under text-secondary fontSz">
+                                            <div class="fontSz">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    style="color: #FFD400;" fill="currentColor"
+                                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                </svg> 필수 항목 전체동의
+                                            </div>
+                                            <div class="line fontSz" style="font-size: smaller;">펼치기</div>
+                                        </div>
+                                        <div class="nav-under text-secondary">
+                                            <div class="fontSz" style="font-size: smaller;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> (선택) 마케팅 및 광고성 정보 수신 동의
+                                            </div>
+                                            <div class="fontSz" style="font-size: smaller;"></div>
+                                        </div>
+                                        <div class="nav-under text-secondary">
+                                            <div class="fontSz" style="font-size: smaller;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> (선택) 위치기반서비스 이용약관
+                                            </div>
+                                            <div class="fontSz" style="font-size: smaller;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fontSz under_bar fontSz">
+                                    <div class="w-100 cursor_pos_7">
+                                        <button type="button" class="btn btn-y w-100 rounded-0 fontSz pg_7_answer">
+                                            확인
+                                        </button>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_7 pg_7_answer">
+                                            <span class="cursor pg_7_answer" x-placement="bottom">
+                                                <button class="react-joyride__beacon pg_7_answer" type="button">
+                                                    <span class="cursor_outer pg_7_answer"></span>
+                                                    <span class="cursor_inner pg_7_answer"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 8 ------------------------------>
+                        <div class="page" id="p8">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                <div class="w-100 d-flex justify-content-start align-items-center py-3 px-3">
+                                    <div class="back_btn" style="box-shadow:0 0 0;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="agree w-100 h-20 d-flex justify-content-between align-items-center px-5">
+                                    <div class="wait d-flex flex-column fontSz">
+                                        <div class="fs-2 fw-bold">
+                                            앗, 잠시만요!
+                                        </div>
+                                        <div class="text-black-50">
+                                            안전한 사용을 위해 본인확인을 해주세요.
+                                        </div>
+                                    </div>
+                                    <!-- <div class="post">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            fill="currentColor" class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                                            <path
+                                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                                        </svg>
+                                    </div> -->
+                                </div>
+                                <div class="pop">
+                                    <div class="w-100 ">
+                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start">
+                                            <li class="nav-item li1">
+                                                <div class="d-flex justify-content-start align-items-center mt-3 px-4">
+                                                    <div
+                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start">
+                                                        <h3 class="fw-bold flex-fill fw-bold fontSz">
+                                                            휴대폰 인증
+                                                        </h3>
+                                                        <div class="w-100 mt-2 d-flex justify-content-start fontSz">
+                                                            <div class="mx-1">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-exclamation-circle"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                    <path
+                                                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="line text-sm text-black-50">
+                                                                본인명의 휴대폰이 아닌가요?
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item-li li1 w-100 px-1">
+                                                <!-- <input 
+                                                    class="btn w-100 d-flex flex-column justify-content-start align-items-start answer_any_txt pg_8_answer 8_input fontSz">
+                                                    <div class="text-black-50 d-flex justify-content-start ">
+                                                        이름
+                                                    </div>
+                                                    <h4 class="text-black-50 d-flex justify-content-start fontSz">
+                                                        홍길동
+                                                    </h4>
+                                                </input> -->
+                                                <input
+                                                    class="form-control fontSz answer_autoNxt_any_txt pg_8_answer 8_input"
+                                                    type="text" placeholder="&nbsp&nbsp이름" aria-label="Search"
+                                                    style="font-size:large;">
+                                                </input>
+                                            </li>
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control nxt_Input fontSz"
+                                                    placeholder="&nbsp&nbsp주민등록번호" aria-label="Search"
+                                                    style="font-size:large;">
+                                                </input>
+                                            </li>
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control fontSz" placeholder="&nbsp&nbsp휴대폰번호"
+                                                    type="number" aria-label="Search" style="font-size:large;">
+                                                </input>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn mb-3 btn-y w-90 fontSz">
+                                        인증번호 요청
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 9 ------------------------------>
+                        <div class="page" id="p9">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page9</h1>
+                                <div class="w-100 d-flex justify-content-start align-items-center py-3 px-3">
+                                    <div class="back_btn" style="box-shadow:0 0 0;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="agree w-100 h-20 d-flex justify-content-between align-items-center px-5">
+                                    <div class="wait d-flex flex-column fontSz">
+                                        <div class="fs-2 fw-bold">
+                                            앗, 잠시만요!
+                                        </div>
+                                        <div class="text-black-50">
+                                            안전한 사용을 위해 본인확인을 해주세요.
+                                        </div>
+                                    </div>
+                                    <!-- <div class="post">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            fill="currentColor" class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                                            <path
+                                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                                        </svg>
+                                    </div> -->
+                                </div>
+                                <div class="pop">
+                                    <div class="w-100">
+                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start">
+                                            <li class="nav-item li1">
+                                                <div class="d-flex justify-content-start align-items-center mt-3 px-4">
+                                                    <div
+                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start">
+                                                        <h3 class="fw-bold flex-fill fw-bold fontSz">
+                                                            휴대폰 인증
+                                                        </h3>
+                                                        <div class="w-100 mt-2 d-flex justify-content-start fontSz">
+                                                            <div class="mx-1">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-exclamation-circle"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                    <path
+                                                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="line text-black-50 txt-sm">
+                                                                본인명의 휴대폰이 아닌가요?
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item-li li1 w-100 px-1">
+                                                <!-- <input 
+                                                    class="btn w-100 d-flex flex-column justify-content-start align-items-start answer_any_txt pg_8_answer 8_input fontSz">
+                                                    <div class="text-black-50 d-flex justify-content-start ">
+                                                        이름
+                                                    </div>
+                                                    <h4 class="text-black-50 d-flex justify-content-start fontSz">
+                                                        홍길동
+                                                    </h4>
+                                                </input> -->
+                                                <input class="form-control fontSz" placeholder="&nbsp&nbsp⦁&nbsp⦁&nbsp⦁"
+                                                    aria-label="Search" style="font-size:large;" disabled>
+                                                </input>
+                                            </li>
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control fontSz ID_num13 pg_9_answer 9_input"
+                                                    placeholder="&nbsp&nbsp주민등록번호" aria-label="Search"
+                                                    style="font-size:large;" type="password" maxlength="13">
+                                                </input>
+                                            </li>
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control input_nxt_btn fontSz"
+                                                    placeholder="&nbsp&nbsp휴대폰번호" aria-label="Search"
+                                                    style="font-size:large;">
+                                                </input>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn mb-3 btn-y w-90 fontSz">
+                                        인증번호 요청
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 10 ------------------------------>
+                        <div class="page" id="p10">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page10</h1>
+                                <div class="w-100 d-flex justify-content-start align-items-center py-3 px-3">
+                                    <div class="back_btn" style="box-shadow:0 0 0;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="agree w-100 h-20 d-flex justify-content-between align-items-center px-5">
+                                    <div class="wait d-flex flex-column fontSz">
+                                        <div class="fs-2 fw-bold">
+                                            앗, 잠시만요!
+                                        </div>
+                                        <div class="text-black-50">
+                                            안전한 사용을 위해 본인확인을 해주세요.
+                                        </div>
+                                    </div>
+                                    <!-- <div class="post">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            fill="currentColor" class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                                            <path
+                                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                                        </svg>
+                                    </div> -->
+                                </div>
+                                <div class="pop">
+                                    <div class="w-100">
+                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start">
+                                            <li class="nav-item li1">
+                                                <div class="d-flex justify-content-start align-items-center mt-3 px-4">
+                                                    <div
+                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start">
+                                                        <h3 class="fw-bold flex-fill fw-bold fontSz">
+                                                            휴대폰 인증
+                                                        </h3>
+                                                        <div class="w-100 mt-2 d-flex justify-content-start fontSz">
+                                                            <div class="mx-1">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-exclamation-circle"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                    <path
+                                                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="line text-black-50 txt-sm">
+                                                                본인명의 휴대폰이 아닌가요?
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item-li li1 w-100 px-1">
+                                                <!-- <input 
+                                                    class="btn w-100 d-flex flex-column justify-content-start align-items-start answer_any_txt pg_8_answer 8_input fontSz">
+                                                    <div class="text-black-50 d-flex justify-content-start ">
+                                                        이름
+                                                    </div>
+                                                    <h4 class="text-black-50 d-flex justify-content-start fontSz">
+                                                        홍길동
+                                                    </h4>
+                                                </input> -->
+                                                <input class="form-control fontSz" placeholder="&nbsp&nbsp⦁&nbsp⦁&nbsp⦁"
+                                                    aria-label="Search" style="font-size:large;" disabled>
+                                                </input>
+                                            </li>
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control fontSz" placeholder="&nbsp&nbsp⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁"
+                                                    aria-label="Search" style="font-size:large;" disabled>
+                                                </input>
+                                            </li>
+                                            <li class="nav-item-li px-1 li1">
+                                                <input class="form-control fontSz ID_num11 pg_10_answer 10_input"
+                                                    placeholder="&nbsp&nbsp휴대폰번호" aria-label="Search"
+                                                    style="font-size:large;" type="password" maxlength="11">
+                                                </input>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn mb-3 btn-y w-90 fontSz input_nxt_btn">
+                                        인증번호 요청
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 11 ------------------------------>
+                        <div class="page" id="p11">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page11</h1>
+                                <div class="bg-image"
+                                    style="background-image: url('./assets/image/map.png');  height: 100%;">
+                                    <div
+                                        class="under_bar addShadow d-flex flex-column justify-content-center align-items-center">
+                                        <div class="container d-flex flex-column align-items-center"
+                                            style="min-height:40%">
+                                            <div class="w-100 px-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center h-30">
+                                                <img src=./assets/image/29.png class="icon">
+                                            </div>
+                                            <div class="tab w-100 flex-fill d-flex justify-content-center mx-4 mb-3">
+                                                <div class="txt-wrap d-flex w-90">
+                                                    <div class="txt fontSz">
+                                                        <div class="fontSz">
+                                                            <p class="">승합차</p>
+                                                        </div>
+                                                        <div>
+                                                            넓고 쾌적한 이동이 필요할 때, 승합차 예약 서비스를 이용해보세요.<br>
+                                                            설정한 도착지까지 확정된 요금으로 예약 가능합니다.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 w-100 bg-secondary bg-opacity-10" style="min-height:30%">
+                                            <div class=" h-100 d-flex flex-column align-items-center">
+                                                <div class="w-100 d-flex justify-content-between mb-1">
+                                                    <ul class="nav justify-content-center">
+                                                        <div class="cursor_pos_1">
+                                                            <li class="nav-item pg_11_answer fontSz">
+                                                                <a class="nav-link fontB disabled p-2 pg_11_answer fontSz"
+                                                                    aria-current="page">💳 월디신용카드</a>
+                                                            </li>
+                                                            <!-- 커서 가이드 -->
+                                                            <div class="cursor_wrap cursor_wrap_11 pg_11_answer">
+                                                                <span class="cursor pg_11_answer" x-placement="bottom">
+                                                                    <button class="react-joyride__beacon pg_11_answer"
+                                                                        type="button">
+                                                                        <span class="cursor_outer pg_11_answer"></span>
+                                                                        <span class="cursor_inner pg_11_answer"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </ul>
+                                                    <ul class="nav justify-content-center">
+                                                        <li class="nav-item fontSz">
+                                                            <a class="nav-link disabled p-2 fontSz">쿠폰·포인트 0P</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="w-100 h-75 border-top pt-3">
+                                                    <div class="d-flex justify-content-between align-items-center"
+                                                        style="min-height:30%">
+                                                        <ul class="nav justify-content-center align-items-center">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link disabled active p-2 fontSz"
+                                                                    aria-current="page ">본인탑승 &gt;</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="nav flex-column align-items-end me-2">
+                                                            <li class="nav-item d-flex align-items-center">
+                                                                <div class="fontSz">예상</div>
+                                                                <h4 class="fontSz">12,400원</h4>
+                                                            </li>
+                                                            <li class="nav-item txt-sm fontSz">
+                                                                <div>예약비 무료</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button type="button"
+                                                        class="w-100 btn btn-primary btn-lg mt-2 fontSz">
+                                                        호출하기
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 12 ------------------------------>
+                        <div class="page" id="p12">
+                            <div class="page_wrap">
+                                <canvas id="confetti-canvas" class="canvas" width="465" height="1224"></canvas>
+                                <div class="complt_img_wrap"><img src="../common/images/done.png" width="100%" class="done_img"></div>
+                            </div>
+                        </div>
+                    </main>
+                    <div class="ctrlbar-bg"></div>
+                    <div class="ctrlbar" id="ctrlbar">
+                        <div class="start_btn_wrap">
+                            <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
+                        </div>
+                        <div class="nav_btn_wrap">
+                            <div class="baricon_wrap prev" id="prev_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">이전</div>
+                            </div>
+                            <div class="baricon_wrap pause">
+
+                                <div class="stop" id="pause_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">멈춤</div>
+                                </div>
+
+                                <div class="play" id="play_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                            <path
+                                                d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                            <path
+                                                d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">재생</div>
+                                </div>
+
+                            </div>
+                            <div class="baricon_wrap" id="hint_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-question svg front" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">힌트</div>
+                            </div>
+                            <div class="baricon_wrap" id="size_btn">
+                                <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-type svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">크기</div>
+                            </div>
+                            <div class="baricon_wrap next" id="next_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">다음</div>
+                            </div>
+                        </div>
+                        <!-- popover : slider --------------- -->
+                        <div hidden>
+                            <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
+
+                                <!-- /////////////// -->
+                                <div class="txt_ex1 fw-bold fw-bold">가</div>
+                                <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                                <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                                <!-- <p>Value: <span id="value"></span></p> -->
+                                <div class="txt_ex2 fw-bold fs-3 fw-bold">가</div>
+                                <!-- /////////////// -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="pg_info.js"> </script>
+    
+    <script src="../common/js/pg_handler.js"> </script>
+</body>
+
+</html>
