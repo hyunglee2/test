@@ -1,5 +1,6 @@
 iframe {
-    width: -webkit-fill-available;
+  width: -webkit-fill-available !important;
+  height: -webkit-fill-available !important;
 }
 
 /* ------------confetti CSS------------ */
