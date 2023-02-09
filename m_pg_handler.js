@@ -1,3 +1,12 @@
+//porting
+var JS = document.createElement("script"); 
+JS.type = "text/javascript"; 
+JS.charset = "UTF-8"; 
+JS.src = "https://sdfedu.seoul.kr/common/js/content_tracking.js";
+document.getElementsByTagName('head')[0].appendChild(JS); 
+
+//++++++++++++++++++++++++++++++++++++++
+
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
 var user_input_txt = '';
 var user_input_txt_multi = '';
@@ -28,7 +37,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 //창 비율 고정
-let vh = window.innerHeight * 0.01;
+let vh = window.innerHeight * 0.015;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 window.addEventListener("resize", () => {
@@ -71,6 +80,7 @@ function firstPageLoader() {
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#start-btn').click(function () {
+    fn_FinishPage(); //포팅
     $('.nav_btn_wrap').css('display', 'block');
     //$('.nav_btn_wrap').css('display', 'flex');
     $('.start_btn_wrap').css('display', 'none');
@@ -98,6 +108,7 @@ $('#start-btn').click(function () {
     } else {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
+    fn_StartPage(page_num);
 
 });
 
@@ -109,6 +120,7 @@ $('#start-btn').click(function () {
 
 //다음 버튼 : 클릭 시 페이지 이동, 해당 페이지오디오만 재생(배열 인덱스라 페이지 넘버-1) 
 $(document).on("click", "#next_btn", function () {
+    fn_FinishPage(); //포팅
     //$('#next_btn').click(function () {
     if (page_num < total_page) {
         page_num += 1;
@@ -148,6 +160,7 @@ $(document).on("click", "#next_btn", function () {
     } else {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
+    fn_StartPage(page_num);
 
 });
 
@@ -158,7 +171,7 @@ $(document).on("click", "#next_btn", function () {
 
 //이전 버튼
 $(document).on("click", "#prev_btn", function () {
-
+    fn_FinishPage(); //포팅
     if (page_num > 1) {
         page_num -= 1;
         $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
@@ -206,6 +219,7 @@ $(document).on("click", "#prev_btn", function () {
     } else if (audio_stat == 1) {
         audioArray[page_num - 1].play();
     }
+    fn_StartPage(page_num);
 
 });
 
@@ -302,6 +316,7 @@ $('#hint_btn').click(function () {
 
 //다음으로 가기 함수 
 function next(real_pg) {
+    fn_FinishPage(); //포팅
     page_num += 1;
     $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
     $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
@@ -327,6 +342,7 @@ function next(real_pg) {
     }
     console.log(page_num);
     doubleSubmitFlag = false;
+    fn_StartPage(page_num);
 }
 
 var doubleSubmitFlag = false;
