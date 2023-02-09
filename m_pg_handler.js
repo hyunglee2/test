@@ -28,7 +28,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 //창 비율 고정
-let vh = window.innerHeight * 0.02;
+let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 window.addEventListener("resize", () => {
