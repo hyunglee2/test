@@ -156,10 +156,10 @@ video {
 
 
     /* Prevent font scaling in landscape */
--webkit-text-size-adjust: 200%!important; /*Chrome, Safari, newer versions of Opera*/
--moz-text-size-adjust: 200%!important; /*Firefox*/
--ms-text-size-adjust: 200%!important; /*Ie*/
--o-text-size-adjust: 200%!important; /*old versions of Opera*/
+-webkit-text-size-adjust: 250%!important; /*Chrome, Safari, newer versions of Opera*/
+-moz-text-size-adjust: 250%!important; /*Firefox*/
+-ms-text-size-adjust: 250%!important; /*Ie*/
+-o-text-size-adjust: 250%!important; /*old versions of Opera*/
 }
 
 article,
