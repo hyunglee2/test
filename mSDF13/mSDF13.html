@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0,
+        minimum-scale=1.0, maximum-scale=2.0, target-densitydpi=device-dpi">
+    <title>SDF</title>
+    <link href="./common/styles/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="../common/styles/layout.css" rel="stylesheet" />
+    <link href="../common/styles/animate.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link href="../common/styles/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script> -->
+    <script src="../common/js/bootstrap.bundle.min.js"> </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../common/js/confetti.js"> </script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <div class="contain">
+                    <main class="main" id="main" role="main">
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            잠깐!
+                                        </h5>
+                                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button> -->
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button type="button" class="btn btn-secondary btn-lg"
+                                            data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                        <div class="page" id="p0">
+                            <div class="page_wrap">
+                                <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                <div class="w-100 flex-center-center">
+                                    <!--<h3 class="fontSz">💎💎💎</h3>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 1 ------------------------------>
+                        <div class="page" id="p1">
+                            <h1 class="pg_title" style="color: #fff;">Page1</h1>
+                            <div class="page_wrap">
+                                <div class="pg_top">
+                                    <div class="tab_bar">
+                                        <h1 class="tab selected">홈</h1>
+                                        <h1 class="tab">마이카</h1>
+                                        <h1 class="tab">여행</h1>
+                                    </div>
+                                    <div class="cont fontSz">
+                                        <p class="">
+                                            택시의 신세계!<br>
+                                            카카오택시 사용 가이드
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="pg_bottom">
+                                    <div class="top">
+                                        <div class="tab_bar">
+                                            <div class="tab_wrap">
+                                                <div class="tab text-lightgray fontSz">🪙스마트한 이동!</div>
+                                                <div class="tab fontSz">
+                                                    <div class="">충전|</div>
+                                                    <div class="">선물|</div>
+                                                    <div class="">적립</div>
+                                                </div>
+                                            </div>
+                                            <img class="radius" src=../common/images/banner_1.png width="100%">
+                                        </div>
+                                        <div class="icon_area">
+                                            <div class="icon_wrap">
+                                                <div class="cursor_pos_1 tab">
+                                                    <img src=./assets/image/2.png class="icon pg_1_answer">
+                                                    택시
+                                                    <!-- 커서 가이드 -->
+                                                    <div class="cursor_wrap cursor_wrap_1 pg_1_answer">
+                                                        <span class="cursor" x-placement="bottom pg_1_answer">
+                                                            <button class="react-joyride__beacon pg_1_answer" type="button">
+                                                                <span class="cursor_outer pg_1_answer"></span>
+                                                                <span class="cursor_inner pg_1_answer"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/3.png class="icon">
+                                                    블랙
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/4.png class="icon">
+                                                    바이크
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/5.png class="icon">
+                                                    대리
+                                                </div>
+                                            </div>
+                                            <div class="icon_wrap">
+                                                <div class="tab">
+                                                    <img src=./assets/image/6.png class="icon">
+                                                    퀵/택배
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/7.png class="icon">
+                                                    렌터카
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/8.png class="icon">
+                                                    항공
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/9.png class="icon">
+                                                    마이카
+                                                </div>
+                                            </div>
+                                            <div class="icon_wrap">
+                                                <div class="tab">
+                                                    <img src=./assets/image/10.png class="icon">
+                                                    시외버스
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/11.png class="icon">
+                                                    기차
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/12.png class="icon">
+                                                    셔틀
+                                                </div>
+                                                <div class="tab">
+                                                    <img src=./assets/image/13.png class="icon">
+                                                    적립
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="under_bar">
+                                        <div class="under_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                                            </svg>
+                                            <div class="text-sm fontSz">홈</div>
+                                        </div>
+                                        <div class="under_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                            </svg>
+                                            <div class="text-sm fontSz">비즈니스</div>
+                                        </div>
+                                        <div class="under_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                            </svg>
+                                            <div class="text-sm"></div>
+                                        </div>
+                                        <div class="under_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                                            </svg>
+                                            <div class="text-sm fontSz">알림</div>
+                                        </div>
+                                        <div class="under_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                            </svg>
+                                            <div class="text-sm fontSz">내 정보</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 2 ------------------------------>
+                        <div class="page" id="p2">
+                            <div class="page_wrap">
+                                <div class="bg-image image"
+                                    style="background-image: url('./assets/image/map1.jpg');  width: 100%; height: 100%;">
+                                    <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                                    <div class="fixed-bottom position-absolute">
+                                        <div class="fontSz container d-flex justify-content-between align-items-center">
+                                            <div class="cursor_pos_2">
+                                                <div
+                                                    class="bg-white text-lg border rounded-pill px-4 py-2 pg_2_answer fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-calendar-check pg_2_answer"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                        <path
+                                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                    </svg>
+                                                    예약
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                    <span class="cursor pg_2_answer" x-placement="bottom">
+                                                        <button class="react-joyride__beacon pg_2_answer" type="button">
+                                                            <span class="cursor_outer pg_2_answer"></span>
+                                                            <span class="cursor_inner pg_2_answer"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                                            <div class="bg-white border-secondary rounded-pill px-2 py-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="fontSz under_bar flex-column">
+                                            <div class="w-100">
+                                                <div class="form w-100 tab border-bottom fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                    </svg>
+                                                    현위치: 남부터미널
+                                                </div>
+                                                <div class="form w-100 tab text-black-50 fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-dot text-danger"
+                                                        viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                                                    </svg>
+                                                    어디로 갈까요?
+                                                </div>
+                                            </div>
+                                            <div class="fontSz w-100 d-flex justify-content-start align-items-center">
+                                                <div class="bg-light border-secondary rounded-pill px-3 py-1 ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-house-door"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                                                    </svg>
+                                                    집
+                                                </div>
+                                                <div class="bg-light border-secondary rounded-pill px-3 py-1 mx-3 ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                                                        <path
+                                                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
+                                                    </svg>
+                                                    회사
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 3 ------------------------------>
+                        <div class="page" id="p3">
+                            <div class="page_wrap">
+                                <div class="bg-image image"
+                                    style="background-image: url('./assets/image/map1.jpg'); height: 100%;">
+                                    <h1 class="pg_title" style="color: #fff;">Page3</h1>
+                                    <div class="under_bar d-flex flex-column justify-content-start align-items-start">
+                                        <div class="w-100 h-10 mt-2 d-flex justify-content-center align-items-center">
+                                            <h5 class="d-flex justify-content-center align-items-center m-0 fontSz">예약
+                                            </h5>
+                                        </div>
+                                        <div class="w-100 h-10 tab_bar d-flex justify-content-around fontSz">
+                                            <div class="w-50 tab t1 text-center">일반 예약</div>
+                                            <div class="w-50 tab text-black-50 text-center">시간 예약</div>
+                                        </div>
+                                        <div
+                                            class="container d-flex flex-column flex-fill justify-content-between py-3">
+                                            <div class="d-flex flex-column align-items-center flex-fill px-3">
+                                                <div class="w-100 d-flex justify-content-between fontSz">
+                                                    <div class="text">출발 시간</div>
+                                                    <div class="text-primary">오늘 15:30</div>
+                                                </div>
+
+                                                <div class="w-100 tab_bar picker flex-fill p-4">
+                                                    <div class="tab h-25">
+                                                        <div class="tab_content w-50"></div>
+                                                        <div class="tab_content w-50 fontSz">
+                                                            <div class="">15</div>
+                                                            <div class="">:</div>
+                                                            <div class="">20</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab h-50">
+                                                        <h4 class="tab_content w-50 text-primary fontSz">오늘</h4>
+                                                        <div class="tab_content w-50 fontSz">
+                                                            <h4 class="text-primary">15</h4>
+                                                            <h4 class="text-primary">:</h4>
+                                                            <h4 class="text-primary">30</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab h-25">
+                                                        <div class="tab_content w-50 fontSz">내일</div>
+                                                        <div class="tab_content w-50 fontSz">
+                                                            <div class="">15</div>
+                                                            <div class="">:</div>
+                                                            <div class="">40</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 container d-flex justify-content-around">
+                                                <button type="button" class="btn btn-outline-g w-50 mx-1 fontSz">
+                                                    취소
+                                                </button>
+                                                <div class="w-50 cursor_pos_3">
+                                                    <button type="button"
+                                                        class="btn btn-primary btn-lg w-100 mx-1 pg_3_answer fontSz">
+                                                        선택완료
+                                                    </button>
+                                                    <!-- 커서 가이드 -->
+                                                    <div class="cursor_wrap cursor_wrap_3 pg_3_answer">
+                                                        <span class="cursor pg_3_answer" x-placement="bottom">
+                                                            <button class="react-joyride__beacon pg_3_answer"
+                                                                type="button">
+                                                                <span class="cursor_outer pg_3_answer"></span>
+                                                                <span class="cursor_inner pg_3_answer"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 4 ------------------------------>
+                        <div class="page" id="p4">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page4</h1>
+                                <div class="pg_top">
+                                    <div class="search_area">
+                                        <nav class="navbar">
+                                            <div class="w-100 d-flex justify-content-start align-items-center">
+                                                <div class="ps-3 pt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-arrow-left"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="ps-4 pt-3 fontSz">11.21(월) 21:40</div>
+                                            </div>
+                                            <div class="gap">
+                                                <div class="box d-flex justify-content-between">
+                                                    <div
+                                                        class="d-flex justify-content-start align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                            fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"
+                                                            class="">
+                                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                        </svg>
+                                                        <input
+                                                            class="w-100 text-black-50 d-flex justify-content-start align-items-center ps-1 fontSz answer_auto_txt pg_4_answer 4_input"
+                                                            placeholder="출발지 검색"></input>
+                                                    </div>
+                                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-mic"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                                                            <path
+                                                                d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                                                        </svg></div>
+                                                </div>
+                                            </div>
+                                            <div class="gap">
+                                                <div class="ps-3 pe-3 d-flex justify-content-between">
+                                                    <div class="text-black-50 d-flex align-items-center fontSz">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                            fill="currentColor" class="bi bi-dot text-danger"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                                                            </path>
+                                                        </svg>
+                                                        도착지 검색
+                                                    </div>
+                                                    <div class="text-black-50 fontSz">+경유</div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 p-3 d-flex justify-content-between">
+                                                <div class="text-black-50 fontSz ps-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-house-door"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                                                    </svg> 집 &nbsp;&nbsp;
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                                                        <path
+                                                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
+                                                    </svg>회사
+                                                </div>
+                                                <div class="pe-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt me-3"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
+                                        style="height: .5em;">
+                                    </div>
+                                    <div class="flex-center-center h-35 rounded border border-5 border-danger p-3 m-3">
+                                        <h4 class="text-danger fw-bold m-0">출발지 검색란에 '남부터미널'을 입력해 주세요.
+                                        </h4>
+                                    </div>
+                                    <div class="padding text-black-50 d-flex flex-center-center fontSz">
+                                        최근 설정 기록이 없습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 5 ------------------------------>
+                        <div class="page" id="p5">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page5</h1>
+                                <div class="page_wrap">
+                                    <div class="pg_top">
+                                        <div class="search_area">
+                                            <nav class="navbar">
+                                                <div class="w-100 d-flex justify-content-start align-items-center">
+                                                    <div class="ps-3 pt-3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-arrow-left"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="ps-4 pt-3 fontSz">11.21(월) 21:40</div>
+                                                </div>
+                                                <div class="gap">
+                                                    <div class="box d-flex justify-content-between">
+                                                        <div class="d-flex justify-content-start align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="30" fill="currentColor" class="bi bi-dot"
+                                                                viewBox="0 0 16 16">
+                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                            </svg>
+                                                            <div
+                                                                class="w-100 text-black-50 d-flex justify-content-start align-items-center ps-1 fontSz">
+                                                                남부터미널</div>
+                                                        </div>
+                                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor" class="bi bi-mic"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                                                                <path
+                                                                    d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gap">
+                                                    <div class="ps-3 pe-3 d-flex justify-content-between">
+                                                        <div class="text-black-50 d-flex align-items-center fontSz">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="30" fill="currentColor"
+                                                                class="bi bi-dot text-danger" viewBox="0 0 16 16">
+                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                                                                </path>
+                                                            </svg>
+                                                            도착지 검색
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 p-3 d-flex justify-content-between">
+                                                    <div class="text-black-50 fontSz ps-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-house-door"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                                                        </svg> 집 &nbsp;&nbsp;
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-building"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                                                            <path
+                                                                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
+                                                        </svg>회사
+                                                    </div>
+                                                    <div class="pe-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-geo-alt me-3"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                            <path
+                                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
+                                            style="height: .5em;">
+                                        </div>
+                                        <div
+                                            class="container d-flex flex-column justify-content-center align-items-start">
+                                            <div class="w-100 d-flex justify-content-between align-items-start py-3">
+                                                <div class="tab fontSz">
+                                                    장소결과
+                                                </div>
+                                            </div>
+                                            <div class="w-100 tab d-flex justify-content-center align-items-start py-2">
+                                                <div class="w-100 txt-wrap d-flex justify-content-between">
+                                                    <div class="txt text-left w-75 fontSz">
+                                                        <div class="bluef">서울남부터미널</div>
+                                                        <div class="w-100 text-black-50">13.33km &nbsp;&nbsp; 서울 서초구 효령로
+                                                            292</div>
+                                                    </div>
+                                                    <button type="button" class="btn btn-outline-g fontSz pg_5_answer">
+                                                        출발
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                                <div class="bg-image image"
+                                    style="background-image: url('./assets/image/map1.jpg');  width: 100%; height: 100%;">
+                                    <div
+                                        class="under_bar d-flex flex-column justify-content-center align-items-start">
+                                        <div class="d-flex flex-column py-4 fontSz">
+                                            <h5 class="font-weight-bold fontSz">서울남부터미널</h5>
+                                            <div class="text-black-50">서울 서초구 효령로 292</div>
+                                        </div>
+                                        <div class="w-100 cursor_pos_6">
+                                            <button type="button"
+                                                class="btn btn-primary btn-lg w-100 pg_6_answer fontSz">
+                                                출발지로 설정
+                                            </button>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_6 pg_6_answer">
+                                                <span class="cursor pg_6_answer" x-placement="bottom">
+                                                    <button class="react-joyride__beacon pg_6_answer" type="button">
+                                                        <span class="cursor_outer pg_6_answer"></span>
+                                                        <span class="cursor_inner pg_6_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                <div class="page_wrap">
+                                    <div class="pg_top">
+                                        <div class="search_area">
+                                            <nav class="navbar">
+                                                <div class="w-100 d-flex justify-content-start align-items-center">
+                                                    <div class="ps-3 pt-3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-arrow-left"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="ps-4 pt-3 fontSz">11.21(월) 21:40</div>
+                                                </div>
+                                                <div class="gap">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div
+                                                            class="ps-3 d-flex justify-content-start align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="30" fill="currentColor" class="bi bi-dot"
+                                                                viewBox="0 0 16 16">
+                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                            </svg>
+                                                            <div
+                                                                class="w-100 d-flex justify-content-start align-items-center ps-1 fontSz">
+                                                                서울남부터미널</div>
+                                                        </div>
+                                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor" class="bi bi-mic"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                                                                <path
+                                                                    d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gap">
+                                                    <div class="box ps-3 pe-3 d-flex justify-content-between">
+                                                        <div class="d-flex justify-content-start align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="30" fill="currentColor"
+                                                                class="bi bi-dot text-danger" viewBox="0 0 16 16">
+                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                                                                </path>
+                                                            </svg>
+                                                            <input
+                                                                class="text-black-50 d-flex align-items-center answer_auto_txt pg_7_answer 7_input"
+                                                                placeholder="도착지 검색">
+                                                            </input>
+                                                        </div>
+                                                        <div class="text-black-50 fontSz">+경유</div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 p-3 d-flex justify-content-between">
+                                                    <div class="text-black-50 fontSz ps-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-house-door"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                                                        </svg> 집 &nbsp;&nbsp;
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-building"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                                                            <path
+                                                                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
+                                                        </svg>회사
+                                                    </div>
+                                                    <div class="pe-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-geo-alt me-3"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                            <path
+                                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
+                                            style="height: .5em;">
+                                        </div>
+                                        <div
+                                            class="container d-flex flex-column justify-content-center align-items-start">
+                                            <div
+                                                class="tab w-100 d-flex justify-content-between align-items-start py-3 fontSz">
+                                                <div>최근내역</div>
+                                                <div>편집</div>
+                                            </div>
+                                            <div class="w-100 tab d-flex justify-content-center align-items-start py-2">
+                                                <div class="w-100 txt-wrap d-flex justify-content-between">
+                                                    <div class="txt text-left w-75 fontSz">
+                                                        <div class="">서울남부터미널</div>
+                                                        <div class="w-100 text-black-50">13.33km &nbsp;&nbsp; 서울 서초구 효령로
+                                                            292</div>
+                                                    </div>
+                                                    <button type="button" class="btn btn-outline-g fontSz">
+                                                        도착
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex-center-center h-35 rounded border border-5 border-danger p-3 m-3">
+                                                <h4 class="text-danger fw-bold m-0">도착지 검색란에 '강남세브란스'을 입력해 주세요.
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 8 ------------------------------>
+                        <div class="page" id="p8">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                <div class="page_wrap">
+                                    <div class="pg_top">
+                                        <div class="search_area">
+                                            <nav class="navbar">
+                                                <div class="w-100 d-flex justify-content-start align-items-center">
+                                                    <div class="ps-3 pt-3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-arrow-left"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="ps-4 pt-3 fontSz">11.21(월) 21:40</div>
+                                                </div>
+                                                <div class="gap">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div
+                                                            class="ps-3 d-flex justify-content-start align-items-center fontSz">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="30" fill="currentColor" class="bi bi-dot"
+                                                                viewBox="0 0 16 16">
+                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                                            </svg>
+                                                            <div
+                                                                class="w-100 d-flex justify-content-start align-items-center ps-1">
+                                                                서울남부터미널</div>
+                                                        </div>
+                                                        <div><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor" class="bi bi-mic"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                                                                <path
+                                                                    d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gap">
+                                                    <div class="box ps-3 pe-3 d-flex justify-content-between">
+                                                        <div class="d-flex justify-content-start align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                                height="30" fill="currentColor"
+                                                                class="bi bi-dot text-danger" viewBox="0 0 16 16">
+                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                                                                </path>
+                                                            </svg>
+                                                            <div class="text-black-50 d-flex align-items-center fontSz">
+                                                                강남세브란스
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 p-3 d-flex justify-content-between">
+                                                    <div class="text-black-50 fontSz ps-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-house-door"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                                                        </svg> 집 &nbsp;&nbsp;
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-building"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                                                            <path
+                                                                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
+                                                        </svg>회사
+                                                    </div>
+                                                    <div class="pe-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-geo-alt me-3"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                            <path
+                                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
+                                            style="height: .5em;">
+                                        </div>
+                                        <div
+                                            class="container d-flex flex-column justify-content-center align-items-start">
+                                            <div class="w-100 d-flex justify-content-between align-items-start py-3">
+                                                <div class="tab">
+                                                    장소결과
+                                                </div>
+                                            </div>
+                                            <div class="w-100 tab d-flex justify-content-center align-items-start py-2">
+                                                <div class="w-100 txt-wrap d-flex justify-content-between">
+                                                    <div class="txt text-left w-75 fontSz">
+                                                        <div class="bluef">강남세브란스</div>
+                                                        <div class="w-100 text-black-50">15.71km &nbsp;&nbsp; 서울 강남구 언주로
+                                                            211</div>
+                                                    </div>
+                                                    <button type="button" class="btn btn-outline-g fontSz pg_8_answer">
+                                                        도착
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 9 ------------------------------>
+                        <div class="page" id="p9">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page9</h1>
+
+                                <div class="bg-image image"
+                                    style="background-image: url('./assets/image/map2.jpg');  width: 100%; height: 100%;">
+                                    <div
+                                        class="container top_bar d-flex flex-column justify-content-center align-items-start">
+                                        <div class="d-flex justify-content-center align-items-start">
+                                            <div class="tab d-flex justify-content-center"></div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="under_bar d-flex flex-column justify-content-center align-items-start">
+                                        <div
+                                            class="w-100 tab d-flex justify-content-center align-items-start pg_9_answer">
+                                            <div
+                                                class="w-100 txt-wrap d-flex justify-content-between align-items-center pg_9_answer">
+                                                <div class="w-25 fontSz pg_9_answer"><img class="w-100"
+                                                        src="./assets/image/29.png"></div>
+                                                <div class="txt ps-3 text-left w-75 fontSz pg_9_answer">
+                                                    <div class="pg_9_answer">승합차 예약</div>
+                                                    <div class="w-100 text-black-50 pg_9_answer">넓고 쾌적한 승합차 서비스</div>
+                                                </div>
+                                                <div class="bluef fontSz pg_9_answer">
+                                                    확정 12,400원
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 pt-4 tab d-flex justify-content-center align-items-start">
+                                            <div
+                                                class="w-100 txt-wrap d-flex justify-content-between align-items-center">
+                                                <div class="w-25"><img class="w-100" src="./assets/image/3.png"></div>
+                                                <div class="txt ps-3 text-left w-75 fontSz">
+                                                    <div class="">블랙 예약</div>
+                                                    <div class="w-100 text-black-50">프리미엄한 블랙 서비스</div>
+                                                </div>
+                                                <div class="bluef fontSz">
+                                                    확정 18,100원
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 10 ------------------------------>
+                        <div class="page" id="p10">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page10</h1>
+                                <div class="bg-image image"
+                                    style="background-image: url('./assets/image/map1.jpg');  height: 100%;">
+                                    <div class="under_bar d-flex flex-column justify-content-between align-items-center">
+                                        <div class="px-5 py-4 d-flex flex-column align-items-center" style="height:60%">
+                                            <div class="w-100 px-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center h-50">
+                                                <img src=./assets/image/29.png class="icon">
+                                            </div>
+                                            <div class="tab w-100 flex-fill d-flex justify-content-center scroll">
+                                                <div class="txt-wrap d-flex w-100">
+                                                    <div class="txt fontSz mb-3">
+                                                        <div class="fontSz">
+                                                            <p class="">승합차</p>
+                                                        </div>
+                                                        <div>
+                                                            넓고 쾌적한 이동이 필요할 때, 승합차 예약 서비스를 이용해보세요.<br>
+                                                            설정한 도착지까지 확정된 요금으로 예약 가능합니다.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 w-100 bg-secondary bg-opacity-10 info-area">
+                                            <div class=" h-100 d-flex flex-column align-items-center">
+                                                <div class="w-100 h-25 d-flex justify-content-between">
+                                                    <ul class="nav justify-content-center mb-1">
+                                                        <li class="nav-item fontSz">
+                                                            <a class="nav-link disabled p-2 fontSz"
+                                                                aria-current="page">직접결제></a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="nav justify-content-center">
+                                                        <li class="nav-item fontSz">
+                                                            <a class="nav-link disabled p-2 fontSz">쿠폰·포인트 0P</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="w-100 h-75 border-top pt-3">
+                                                    <div
+                                                        class="h-50 d-flex justify-content-between align-items-center mb-1">
+                                                        <ul class="nav justify-content-center align-items-center">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link disabled active p-2 fontSz"
+                                                                    aria-current="page ">본인탑승 &gt;</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="nav flex-column align-items-end">
+                                                            <li class="nav-item d-flex align-items-center">
+                                                                <div class="fontSz">예상</div>
+                                                                <h4 class="fontSz">12,400원</h4>
+                                                            </li>
+                                                            <li class="nav-item txt-sm fontSz">
+                                                                <div>예약비 무료</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="w-100 d-flex justify-content-around">
+                                                        <button type="button"
+                                                            class="w-25 btn btn-light text-primary mt-2 fontSz">
+                                                            오늘<br>15:30
+                                                        </button>
+                                                        <div class="w-75 cursor_pos_10">
+                                                            <button type="button"
+                                                                class="w-100 btn btn-primary btn-lg mt-2 fontSz pg_10_answer">
+                                                                예약하기
+                                                            </button>
+                                                            <!-- 커서 가이드 -->
+                                                            <div class="cursor_wrap cursor_wrap_10 pg_10_answer">
+                                                                <span class="cursor pg_10_answer" x-placement="bottom">
+                                                                    <button class="react-joyride__beacon pg_10_answer"
+                                                                        type="button">
+                                                                        <span class="cursor_outer pg_10_answer"></span>
+                                                                        <span class="cursor_inner pg_10_answer"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 11 ------------------------------>
+                        <div class="page" id="p11">
+                            <div class="page_wrap">
+                                <h1 class="pg_title fontSz" style="color: #fff;">Page14</h1>
+                                <div class="pg_top d-flex flex-column justify-content-center align-items-center">
+                                    <div
+                                        class="fontSz top w-100 d-flex flex-column justify-content-center align-items-start">
+                                        <h1 class="title_h1"><img src="./assets/image/map9.png" width="100%"></h1>
+                                        <div class="text-black-50"></div>
+                                    </div>
+                                    <ul class="w-100 nav flex-column justify-content-center">
+                                        <li class="nav-item">
+                                        </li>
+                                        <li class="nav-item">
+                                        </li>
+                                    </ul>
+
+                                    <div class="under_bar h-40 flex-column fontSz">
+                                        <div
+                                            class="flex-center-center flex-fill rounded border border-0 border-danger p-3 m-3">
+                                            <h4 class="text-danger fw-bold m-0"></h4>
+                                        </div>
+                                        <div class="w-100 cursor_pos_11">
+                                            <button type="button"
+                                                class="btn btn-b w-100 rounded-0 input_nxt_btn_txt pg_11_answer">
+                                                확인
+                                            </button>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_11 pg_11_answer">
+                                                <span class="cursor pg_11_answer" x-placement="bottom">
+                                                    <button class="react-joyride__beacon pg_11_answer" type="button">
+                                                        <span class="cursor_outer pg_11_answer"></span>
+                                                        <span class="cursor_inner pg_11_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 12 ------------------------------>
+                        <div class="page" id="p12">
+                            <div class="page_wrap">
+                                <canvas id="confetti-canvas" class="canvas" width="465" height="1224"></canvas>
+                                <div class="complt_img_wrap"><img src="../common/images/done.png" width="100%" class="done_img"></div>
+                            </div>
+                        </div>
+                    </main>
+
+                    <div class="ctrlbar-bg"></div>
+                    <div class="ctrlbar" id="ctrlbar">
+                        <div class="start_btn_wrap">
+                            <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
+                        </div>
+                        <div class="nav_btn_wrap">
+                            <div class="baricon_wrap prev" id="prev_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">이전</div>
+                            </div>
+                            <div class="baricon_wrap pause">
+
+                                <div class="stop" id="pause_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">멈춤</div>
+                                </div>
+
+                                <div class="play" id="play_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                            <path
+                                                d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                            <path
+                                                d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">재생</div>
+                                </div>
+
+                            </div>
+                            <div class="baricon_wrap" id="hint_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-question svg front" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">힌트</div>
+                            </div>
+                            <div class="baricon_wrap" id="size_btn">
+                                <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-type svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">크기</div>
+                            </div>
+                            <div class="baricon_wrap next" id="next_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">다음</div>
+                            </div>
+                        </div>
+                        <!-- popover : slider --------------- -->
+                        <div hidden>
+                            <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
+
+                                <!-- /////////////// -->
+                                <div class="txt_ex1 fw-bold">가</div>
+                                <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                                <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                                <!-- <p>Value: <span id="value"></span></p> -->
+                                <div class="txt_ex2 fs-3 fw-bold">가</div>
+                                <!-- /////////////// -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="pg_info.js"> </script>
+    
+    <script src="../common/js/pg_handler.js"> </script>
+</body>
+
+</html>
