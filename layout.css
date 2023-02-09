@@ -137,9 +137,13 @@ svg {
 }
 
 .modal{
-  width : 80% !important;
-  top : 23vh !important;
-  left: 10%!important;
+  width : 300% !important;
+  top : 37vh !important;
+  left: -127.5%!important;
+}
+
+.modal-content {
+  width : 300% !important;
 }
 
 .pop {
