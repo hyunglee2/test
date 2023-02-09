@@ -5,6 +5,13 @@ JS.charset = "UTF-8";
 JS.src = "https://sdfedu.seoul.kr/common/js/content_tracking.js";
 document.getElementsByTagName('head')[0].appendChild(JS); 
 
+var _currTime = 0;
+var _isComplete = false;
+var _postMessage = false;
+var _startPage = null;
+var _initPage = false;
+var _isLocal = false;
+var _pst = new Date().getTime();
 //++++++++++++++++++++++++++++++++++++++
 
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
@@ -53,6 +60,14 @@ function runConfetti() {
     });
 }
 
+//시작페이지
+function fn_GetStartPage() {
+	if(_isLocal == true) {
+		return top.getStartPage();
+	} else {
+		return _startPage;
+	}
+}
 
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
@@ -61,6 +76,7 @@ function runConfetti() {
 $(document).ready(function () {
     firstPageLoader();
     $("#page_wrap").addClass("zoomIn");
+    fn_GetStartPage();
 });
 
 
